@@ -4,10 +4,12 @@ import ArrowRightIcon from '../icons/ArrowRightIcon';
 import styles from './Trip.module.css';
 
 const Trip = ({ title, about, difficulty, type, location, id }) => {
+  // src={`/images/${id}.jpg`}
+
   return (
     <li className={styles.trip}>
       <Image
-        src={`/images/${id}.jpg`}
+        src={'https://source.unsplash.com/collection/8761243/500x400'}
         alt={title}
         width={500}
         height={400}
