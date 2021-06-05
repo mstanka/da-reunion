@@ -1,0 +1,17 @@
+.nav {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.link {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.link a {
+  cursor: pointer;
+}
