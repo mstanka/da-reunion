@@ -28,11 +28,11 @@ const Difficulty = ({ value, onChange }) => {
       <label>
         <input
           type="checkbox"
-          value="težší"
+          value="těžší"
           onChange={handleOnChange}
-          checked={value.includes('težší')}
+          checked={value.includes('těžší')}
         />
-        težší
+        těžší
       </label>
     </>
   );

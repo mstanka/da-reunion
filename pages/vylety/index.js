@@ -15,13 +15,16 @@ const TripsPage = ({ trips }) => {
 
   return (
     <div>
+      <h1>Vyfiltruj si výlet</h1>
+      <h2>Obtížnost:</h2>
       <Difficulty
         value={filter.difficulty}
         onChange={(value) =>
           setFilter((filter) => ({ ...filter, difficulty: value }))
         }
       />
-      <br />
+
+      <h2>Typ:</h2>
       <Type
         value={filter.type}
         onChange={(value) =>
@@ -30,11 +33,15 @@ const TripsPage = ({ trips }) => {
       />
 
       <TripList
-        trips={trips.filter((trip) => {
-          if (filter.difficulty.length === 0 || filter.type.length === 0)
-            return true;
-          return filter.difficulty.includes(trip.difficulty) && filter.type.includes(trip.type);
-        })}
+        trips={trips
+          .filter((trip) => {
+            if (filter.difficulty.length === 0) return true;
+            return filter.difficulty.includes(trip.difficulty);
+          })
+          .filter((trip) => {
+            if (filter.type.length === 0) return true;
+            return filter.type.includes(trip.type);
+          })}
       />
     </div>
   );
