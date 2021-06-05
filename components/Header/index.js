@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -8,6 +9,14 @@ const Header = () => {
         <Link href="/">
           <a className="website-name">
             <div>Réunion... </div> <div>našima očima</div>
+            <div className={styles.image}>
+              <Image
+                src={'/images/plaz_uvodni.jpg'}
+                width={2600}
+                height={900}
+                alt="Uvodní fotka"
+              />
+            </div>
           </a>
         </Link>
       </h1>
