@@ -12,7 +12,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: './featuredImages/featured-1.jpg',
+    featuredImage: '../images/featuredImages/featured-1.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -28,7 +28,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: './featuredImages/featured-2.jpg',
+    featuredImage: '../images/featuredImages/featured-2.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -44,7 +44,7 @@ export const Trips = [
     difficulty: 'težší',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: './featuredImages/featured-3.jpg',
+    featuredImage: '../images/featuredImages/featured-3.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -60,7 +60,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: './featuredImages/featured-4.jpg',
+    featuredImage: '../images/featuredImages/featured-4.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -76,7 +76,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'vodopád',
     location: 'střed ostrova',
-    featuredImage: './featuredImages/featured-5.jpg',
+    featuredImage: '../images/featuredImages/featured-5.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -92,7 +92,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž, vodopád',
     location: 'jihovýchod',
-    featuredImage: './featuredImages/',
+    featuredImage: '../images/featuredImages/featured-6.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -108,6 +108,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
+    featuredImage: '../images/featuredImages/featured-7.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -123,6 +124,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
+    featuredImage: '../images/featuredImages/featured-8.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -138,6 +140,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
+    featuredImage: '../images/featuredImages/featured-9.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -153,6 +156,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'jihozápad',
+    featuredImage: '../images/featuredImages/featured-10.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -168,6 +172,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'jezera, vodopád',
     location: 'jihozápad',
+    featuredImage: '../images/featuredImages/featured-11.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -183,6 +188,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'město',
     location: 'jihozápad, střed ostrova',
+    featuredImage: '../images/featuredImages/featured-12.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -198,6 +204,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'vodopád',
     location: 'severovýchod',
+    featuredImage: '../images/featuredImages/featured-13.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -213,6 +220,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'jezero',
     location: 'jih',
+    featuredImage: '../images/featuredImages/featured-14.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -228,6 +236,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'vodopád',
     location: 'jih',
+    featuredImage: '../images/featuredImages/featured-15.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -243,6 +252,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'útesy',
     location: 'jih',
+    featuredImage: '../images/featuredImages/featured-16.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -258,6 +268,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'město',
     location: 'sever',
+    featuredImage: '../images/featuredImages/featured-17.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -273,6 +284,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'jih',
+    featuredImage: '../images/featuredImages/featured-18.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -288,6 +300,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'jezero',
     location: 'východ',
+    featuredImage: '../images/featuredImages/featured-19.jpg',
     icon: './icons/location.svg',
   },
 ];
