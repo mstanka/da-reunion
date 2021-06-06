@@ -1,3 +1,5 @@
+import styles from './Difficulty.module.css'
+
 const Difficulty = ({ value, onChange }) => {
   const handleOnChange = (e) => {
     if (value.includes(e.target.value)) {
@@ -6,7 +8,7 @@ const Difficulty = ({ value, onChange }) => {
   };
 
   return (
-    <>
+    <div className={styles.type}>
       <label>
         <input
           type="checkbox"
@@ -34,7 +36,7 @@ const Difficulty = ({ value, onChange }) => {
         />
         těžší
       </label>
-    </>
+    </div>
   );
 };
 

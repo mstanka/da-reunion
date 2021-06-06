@@ -1,3 +1,5 @@
+import styles from './Type.module.css';
+
 const Type = ({ value, onChange }) => {
   const handleOnChange = (e) => {
     if (value.includes(e.target.value)) {
@@ -6,7 +8,7 @@ const Type = ({ value, onChange }) => {
   };
 
   return (
-    <>
+    <div className={styles.type}>
       <label>
         <input
           type="checkbox"
@@ -61,7 +63,7 @@ const Type = ({ value, onChange }) => {
         />
         útesy
       </label>
-    </>
+    </div>
   );
 };
 
