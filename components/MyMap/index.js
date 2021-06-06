@@ -1,18 +1,42 @@
 import React, { useState } from 'react';
-import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
+import ReactMapGL, {
+  Marker,
+  Popup,
+  GeolocateControl,
+  WebMercatorViewport,
+} from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { getAllTripsForMap } from '../../data/trips';
 import styles from './MyMap.module.css';
 import LocationIcon from '../icons/LocationIcon';
 import Link from 'next/link';
 
-const MyMap = () => {
-  const [viewport, setViewport] = useState({
-    latitude: -21.1307379,
-    longitude: 55.5364801,
-    zoom: 10,
-  });
+const applyToArray = (func, array) => func.apply(Math, array);
 
+const getBounds = (markers) => {
+  const lat = markers.map((marker) => marker.lat ?? 0);
+  const lng = markers.map((marker) => marker.long ?? 0);
+
+  const cornersLngLat = [
+    [applyToArray(Math.min, lng), applyToArray(Math.min, lat)],
+    [applyToArray(Math.max, lng), applyToArray(Math.max, lat)],
+  ];
+
+  const viewport = new WebMercatorViewport({
+    width: 800,
+    height: 600,
+  }).fitBounds(cornersLngLat, { padding: 200 });
+
+  const { longitude, latitude, zoom } = viewport;
+  return { longitude, latitude, zoom: zoom + 2 };
+};
+
+const MyMap = ({ trips }) => {
+  console.log(trips);
+  const [viewport, setViewport] = useState(getBounds(trips));
+  // latitude: -21.1307379,
+  // longitude: 55.5364801,
+  // zoom: 10,
   const [chosenPopup, setChosenPopup] = useState(null);
 
   return (
@@ -51,7 +75,7 @@ const MyMap = () => {
         positionOptions={{ enableHighAccuracy: true }}
         trackUserLocation={true}
       />
-      {getAllTripsForMap().map((place) => (
+      {trips.map((place) => (
         <React.Fragment key={place.id}>
           <Marker
             latitude={place.lat}
