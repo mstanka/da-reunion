@@ -34,7 +34,7 @@ const Home = ({ tips }) => {
             našich pobytů získaly.
           </p>
         </div>
-        <TipList tips={tips} />
+        <TipList tips={tips} count={3} />
       </main>
     </>
   );
