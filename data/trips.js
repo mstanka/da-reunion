@@ -312,7 +312,7 @@ export const getAllTrips = () => {
 export const getAllTripsForMap = () => {
   return Trips.map((trip) => ({
     ...trip,
-    id: Number(trip.id),
+    // id: Number(trip.id),
     lat: Number(trip.lat),
     long: Number(trip.long),
   }));

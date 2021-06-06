@@ -1,8 +1,30 @@
 import { useState } from 'react';
 import TripList from '../../components/TripList';
-import { getAllTrips } from '../../data/trips';
+import { getAllTripsForMap } from '../../data/trips';
 import Difficulty from '../../components/Difficulty';
 import Type from '../../components/Type';
+import distance from 'haversine-distance';
+
+const findMyPosition = () =>
+  new Promise((resolve, reject) => {
+    const success = (position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      resolve({ latitude, longitude });
+    };
+
+    const error = () => {
+      reject();
+    };
+
+    if (!navigator?.geolocation) {
+      console.log('Geolocation is not supported by your browser');
+    } else {
+      console.log('locating');
+      navigator.geolocation.getCurrentPosition(success, error);
+    }
+  });
 
 const TripsPage = ({ trips }) => {
   const [filter, setFilter] = useState({
@@ -11,7 +33,26 @@ const TripsPage = ({ trips }) => {
     location: [],
   });
 
-  console.log(filter);
+  const [userPosition, setUserPosition] = useState();
+  const [userTrips, setUserTrips] = useState(trips);
+
+  const handleClick = () => {
+    findMyPosition().then((pos) => {
+      setUserPosition(pos);
+
+      setUserTrips(
+        userTrips
+          .map((trip) => ({
+            ...trip,
+            distance: (distance(pos, {
+              lat: trip.lat,
+              lon: trip.long,
+            }) / 1000).toFixed(1),
+          }))
+          .sort((a, b) => a.distance - b.distance),
+      );
+    });
+  };
 
   return (
     <div>
@@ -23,7 +64,6 @@ const TripsPage = ({ trips }) => {
           setFilter((filter) => ({ ...filter, difficulty: value }))
         }
       />
-
       <h2>Typ:</h2>
       <Type
         value={filter.type}
@@ -31,9 +71,11 @@ const TripsPage = ({ trips }) => {
           setFilter((filter) => ({ ...filter, type: value }))
         }
       />
+      <br />
+      <button onClick={() => handleClick()}>Najdi nejbližší výlet</button>
 
       <TripList
-        trips={trips
+        trips={userTrips
           .filter((trip) => {
             if (filter.difficulty.length === 0) return true;
             return filter.difficulty.includes(trip.difficulty);
@@ -52,7 +94,7 @@ export default TripsPage;
 export const getStaticProps = () => {
   return {
     props: {
-      trips: getAllTrips(),
+      trips: getAllTripsForMap(),
     },
   };
 };

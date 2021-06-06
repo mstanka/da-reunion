@@ -14,6 +14,7 @@ const TripList = ({ trips }) => {
             difficulty={trip.difficulty}
             type={trip.type}
             location={trip.location}
+            distance={trip.distance}
           />
         ))}
       </ul>

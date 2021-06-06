@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
 import styles from './Trip.module.css';
 
-const Trip = ({ title, about, difficulty, type, location, id }) => {
+const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
   // src={`/images/${id}.jpg`}
 
   // <Image
@@ -16,7 +16,10 @@ const Trip = ({ title, about, difficulty, type, location, id }) => {
 
   return (
     <li className={styles.trip}>
-      <img src={'https://source.unsplash.com/collection/8761243/300x200' } alt={title} />
+      <img
+        src={'https://source.unsplash.com/collection/8761243/300x200'}
+        alt={title}
+      />
       <div className={styles.content}>
         <div className={styles.summary}>
           <h2>{title}</h2>
@@ -32,6 +35,11 @@ const Trip = ({ title, about, difficulty, type, location, id }) => {
         <div>
           <p>{location}</p>
         </div>
+        {distance && (
+          <div>
+            <p>Vzdálenost od vás: {distance} km</p>
+          </div>
+        )}
         <div className={styles.actions}>
           <Link href={'/vylety/[id]'} as={`/vylety/${id}`}>
             <a>
