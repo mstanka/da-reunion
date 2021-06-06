@@ -44,15 +44,27 @@ const TripsPage = ({ trips }) => {
         userTrips
           .map((trip) => ({
             ...trip,
-            distance: (distance(pos, {
-              lat: trip.lat,
-              lon: trip.long,
-            }) / 1000).toFixed(1),
+            distance: (
+              distance(pos, {
+                lat: trip.lat,
+                lon: trip.long,
+              }) / 1000
+            ).toFixed(1),
           }))
           .sort((a, b) => a.distance - b.distance),
       );
     });
   };
+
+  const filteredTrips = userTrips
+    .filter((trip) => {
+      if (filter.difficulty.length === 0) return true;
+      return filter.difficulty.includes(trip.difficulty);
+    })
+    .filter((trip) => {
+      if (filter.type.length === 0) return true;
+      return filter.type.includes(trip.type);
+    });
 
   return (
     <div>
@@ -74,17 +86,11 @@ const TripsPage = ({ trips }) => {
       <br />
       <button onClick={() => handleClick()}>Najdi nejbližší výlet</button>
 
-      <TripList
-        trips={userTrips
-          .filter((trip) => {
-            if (filter.difficulty.length === 0) return true;
-            return filter.difficulty.includes(trip.difficulty);
-          })
-          .filter((trip) => {
-            if (filter.type.length === 0) return true;
-            return filter.type.includes(trip.type);
-          })}
-      />
+      {filteredTrips.length === 0 ? (
+        <h3>Zadaným filtrům neodpovídá žádný výlet.</h3>
+      ) : (
+        <TripList trips={filteredTrips} />
+      )}
     </div>
   );
 };
