@@ -25,8 +25,8 @@ const Menu = () => {
         </Link>
       </li>
       <li className={styles.link}>
-        <Link href="/kontakt">
-          <a>Kontakt</a>
+        <Link href="/onas">
+          <a>O nás</a>
         </Link>
       </li>
     </ul>
