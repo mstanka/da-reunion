@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Pattaya&display=swap');
 
 :root {
-  --primary-color: #a16741;
+  --primary-color: #9c7453;
   /* #aa5b49; */
-  --primary-color-light: #f1dcd7;
+  --primary-color-light: #e4c9b5;
   /* #f1dcd7; */
-  --primary-color-dark: #68372c;
+  --primary-color-dark: #523722;
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
 }
@@ -38,9 +38,9 @@ a {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 75rem;
   margin: 0 auto;
-  background-color: var(--primary-color-light);
+  /* background-color: var(--primary-color-light); */
 }
 
 .container-filter {
