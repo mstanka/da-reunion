@@ -16,7 +16,7 @@ const Type = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('hory')}
         />
-        hory
+        <span className={styles.text}>hory</span>
       </label>
       <label>
         <input
@@ -25,7 +25,8 @@ const Type = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('vodopád')}
         />
-        vodopád
+
+        <span className={styles.text}>vodopád</span>
       </label>
       <label>
         <input
@@ -34,7 +35,7 @@ const Type = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('pláž')}
         />
-        pláž
+        <span className={styles.text}>pláž</span>
       </label>
       <label>
         <input
@@ -43,7 +44,7 @@ const Type = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('jezera')}
         />
-        jezero
+        <span className={styles.text}>jezero</span>
       </label>
       <label>
         <input
@@ -52,7 +53,7 @@ const Type = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('město')}
         />
-        město
+        <span className={styles.text}>město</span>
       </label>
       <label>
         <input
@@ -61,7 +62,7 @@ const Type = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('útesy')}
         />
-        útesy
+        <span className={styles.text}>útesy</span>
       </label>
     </div>
   );

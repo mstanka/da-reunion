@@ -99,4 +99,8 @@ a {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .filters div {
+    flex-basis: 30%;
+  }
 }

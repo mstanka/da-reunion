@@ -1,4 +1,4 @@
-import styles from './Difficulty.module.css'
+import styles from './Difficulty.module.css';
 
 const Difficulty = ({ value, onChange }) => {
   const handleOnChange = (e) => {
@@ -16,7 +16,7 @@ const Difficulty = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('pohodička')}
         />
-        pohodička
+        <span className={styles.text}>pohodička</span>
       </label>
       <label>
         <input
@@ -25,7 +25,7 @@ const Difficulty = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('střední')}
         />
-        střední
+        <span className={styles.text}>střední</span>
       </label>
       <label>
         <input
@@ -34,7 +34,7 @@ const Difficulty = ({ value, onChange }) => {
           onChange={handleOnChange}
           checked={value.includes('těžší')}
         />
-        těžší
+        <span className={styles.text}>těžší</span>
       </label>
     </div>
   );
