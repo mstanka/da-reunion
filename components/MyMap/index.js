@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { trips } from '../../data/trips';
-// import { getAllTrips } from '../../data/trips';
+import { getAllTrips } from '../../data/trips';
+import styles from './MyMap.module.css';
+import LocationIcon from '../icons/LocationIcon';
 
 const MyMap = () => {
   const [viewport, setViewport] = useState({
     latitude: -21.1307379,
     longitude: 55.5364801,
-    zoom: 9,
+    zoom: 10,
   });
 
   const [chosenPopup, setChosenPopup] = useState(null);
@@ -37,7 +38,7 @@ const MyMap = () => {
         ],
       }}
       width="100%"
-      height={500}
+      height={1000}
       {...viewport}
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
     >
@@ -49,7 +50,7 @@ const MyMap = () => {
         positionOptions={{ enableHighAccuracy: true }}
         trackUserLocation={true}
       />
-      {trips.map((place) => (
+      {getAllTrips().map((place) => (
         <React.Fragment key={place.id}>
           <Marker
             latitude={place.lat}
@@ -57,15 +58,14 @@ const MyMap = () => {
             offsetLeft={-25}
             offsetTop={-50}
           >
-            {/* <img
+            <img
+              src={place.icon}
+              alt={place.title}
+              className={styles.img}
               onClick={() => {
                 setChosenPopup(place.id);
               }}
-              src={place.icon}
-              width={50}
-              height={50}
-              alt={place.title}
-            /> */}
+            />
           </Marker>
           {chosenPopup === place.id ? (
             <Popup
@@ -78,9 +78,8 @@ const MyMap = () => {
               <p>{place.title}</p>
               <p>{place.about}</p>
 
-              <img src={place.featuredImage} className="imgPopup">
-                {/* <Link href="/vylety"> </Link> */}
-              </img>
+              {/* <img src={place.featuredImage} className="imgPopup">
+                {/* <Link href="/vylety"> </Link>     </img> */}
 
               {/* <Image src="/vercel.svg" alt="Vercel" width={50} height={50} /> */}
             </Popup>

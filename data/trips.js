@@ -13,6 +13,7 @@ export const Trips = [
     type: 'hory',
     location: 'střed ostrova',
     featuredImage: './featuredImages/featured-1.jpg',
+    icon: './icons/location.svg',
   },
   {
     id: '2',
@@ -28,6 +29,7 @@ export const Trips = [
     type: 'hory',
     location: 'střed ostrova',
     featuredImage: './featuredImages/featured-2.jpg',
+    icon: './icons/location.svg',
   },
   {
     id: '3',
@@ -43,6 +45,7 @@ export const Trips = [
     type: 'hory',
     location: 'střed ostrova',
     featuredImage: './featuredImages/featured-3.jpg',
+    icon: './icons/location.svg',
   },
   {
     id: '4',
@@ -58,6 +61,7 @@ export const Trips = [
     type: 'hory',
     location: 'střed ostrova',
     featuredImage: './featuredImages/featured-4.jpg',
+    icon: './icons/location.svg',
   },
   {
     id: '5',
@@ -73,6 +77,7 @@ export const Trips = [
     type: 'vodopád',
     location: 'střed ostrova',
     featuredImage: './featuredImages/featured-5.jpg',
+    icon: './icons/location.svg',
   },
   {
     id: '6',
@@ -88,6 +93,7 @@ export const Trips = [
     type: 'pláž, vodopád',
     location: 'jihovýchod',
     featuredImage: './featuredImages/',
+    icon: './icons/location.svg',
   },
   {
     id: '7',
@@ -102,6 +108,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
+    icon: './icons/location.svg',
   },
   {
     id: '8',
@@ -116,6 +123,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
+    icon: './icons/location.svg',
   },
   {
     id: '9',
@@ -130,6 +138,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
+    icon: './icons/location.svg',
   },
   {
     id: '10',
@@ -144,6 +153,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'jihozápad',
+    icon: './icons/location.svg',
   },
   {
     id: '11',
@@ -158,6 +168,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'jezera, vodopád',
     location: 'jihozápad',
+    icon: './icons/location.svg',
   },
   {
     id: '12',
@@ -172,6 +183,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'město',
     location: 'jihozápad, střed ostrova',
+    icon: './icons/location.svg',
   },
   {
     id: '13',
@@ -186,6 +198,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'vodopád',
     location: 'severovýchod',
+    icon: './icons/location.svg',
   },
   {
     id: '14',
@@ -200,6 +213,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'jezero',
     location: 'jih',
+    icon: './icons/location.svg',
   },
   {
     id: '15',
@@ -214,6 +228,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'vodopád',
     location: 'jih',
+    icon: './icons/location.svg',
   },
   {
     id: '16',
@@ -228,6 +243,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'útesy',
     location: 'jih',
+    icon: './icons/location.svg',
   },
   {
     id: '17',
@@ -242,6 +258,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'město',
     location: 'sever',
+    icon: './icons/location.svg',
   },
   {
     id: '18',
@@ -256,6 +273,7 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'jih',
+    icon: './icons/location.svg',
   },
   {
     id: '19',
@@ -270,9 +288,20 @@ export const Trips = [
     difficulty: 'střední',
     type: 'jezero',
     location: 'východ',
+    icon: './icons/location.svg',
   },
 ];
 
 export const getAllTrips = () => {
-  return Trips;
+  return Trips.map((trip) => ({
+    ...trip,
+    id: Number(trip.id),
+    lat: Number(trip.lat),
+    long: Number(trip.long),
+  }));
 };
+
+// Namapovat latitude a longitude pomocí PaseInt, aby je to prevedlo na cisla
+
+// const DataForMapToNumbers = () => Trips.map((lat) => parseInt(lat));
+// console.log(DataForMapToNumbers());
