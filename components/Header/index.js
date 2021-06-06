@@ -7,8 +7,8 @@ const Header = () => {
     <header className={styles.header}>
       <h1>
         <Link href="/">
-          <a className="website-name">
-            <div>Réunion... </div> <div>našima očima</div>
+          <a className={styles.website_name}>
+            <div>Réunion </div> <div>našima očima</div>
             <div className={styles.image}>
               <Image
                 src={'/images/plaz_uvodni.jpg'}
