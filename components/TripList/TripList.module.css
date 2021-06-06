@@ -1,6 +1,10 @@
 .list {
   width: 90%;
-  max-width: 40rem;
+  max-width: 80rem;
   margin: 5rem auto;
   padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
