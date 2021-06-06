@@ -4,6 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { getAllTripsForMap } from '../../data/trips';
 import styles from './MyMap.module.css';
 import LocationIcon from '../icons/LocationIcon';
+import Link from 'next/link';
 
 const MyMap = () => {
   const [viewport, setViewport] = useState({
@@ -69,19 +70,26 @@ const MyMap = () => {
           </Marker>
           {chosenPopup === place.id ? (
             <Popup
-              className="popup"
+              className={styles.popup}
               latitude={place.lat}
               longitude={place.long}
               offsetTop={-60}
               onClose={() => setChosenPopup(null)}
+              closeOnClick={false}
             >
-              <p>{place.title}</p>
-              <p>{place.about}</p>
+              <div className={styles.popup_content}>
+                <p>{place.title}</p>
+                <p>{place.about}</p>
 
-              {/* <img src={place.featuredImage} className="imgPopup">
-                {/* <Link href="/vylety"> </Link>     </img> */}
-
-              {/* <Image src="/vercel.svg" alt="Vercel" width={50} height={50} /> */}
+                <Link href={`/vylety/${place.id}`}>
+                  <img
+                    src={place.featuredImage}
+                    className={styles.imgPopup}
+                    width={150}
+                    height={100}
+                  />
+                </Link>
+              </div>
             </Popup>
           ) : null}
         </React.Fragment>
