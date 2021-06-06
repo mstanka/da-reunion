@@ -1,7 +1,11 @@
-import AboutUs from '../components/AboutUs/index';
+import AboutUs from '../components/AboutUs';
 
 const Onas = () => {
-  return <AboutUs />;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 };
 
 export default Onas;

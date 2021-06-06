@@ -4,7 +4,7 @@ import { getAllTripsForMap } from '../../data/trips';
 
 const MapPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <MyMap trips={getAllTripsForMap()} />
     </div>
   );
