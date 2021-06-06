@@ -67,24 +67,33 @@ const TripsPage = ({ trips }) => {
     });
 
   return (
-    <div>
-      <h1>Vyfiltruj si výlet</h1>
-      <h2>Obtížnost:</h2>
-      <Difficulty
-        value={filter.difficulty}
-        onChange={(value) =>
-          setFilter((filter) => ({ ...filter, difficulty: value }))
-        }
-      />
-      <h2>Typ:</h2>
-      <Type
-        value={filter.type}
-        onChange={(value) =>
-          setFilter((filter) => ({ ...filter, type: value }))
-        }
-      />
-      <br />
-      <button onClick={() => handleClick()}>Najdi nejbližší výlet</button>
+    <div className="container">
+      <div className="container-filter">
+        <button onClick={() => handleClick()} className="button">
+          Najdi nejbližší výlet
+        </button>
+        <h1>nebo výlet vyfiltruj podle...</h1>
+        <div className="filters">
+          <div>
+            <h2>obtížnosti:</h2>
+            <Difficulty
+              value={filter.difficulty}
+              onChange={(value) =>
+                setFilter((filter) => ({ ...filter, difficulty: value }))
+              }
+            />
+          </div>
+          <div>
+            <h2>typu:</h2>
+            <Type
+              value={filter.type}
+              onChange={(value) =>
+                setFilter((filter) => ({ ...filter, type: value }))
+              }
+            />
+          </div>
+        </div>
+      </div>
 
       {filteredTrips.length === 0 ? (
         <h3>Zadaným filtrům neodpovídá žádný výlet.</h3>
