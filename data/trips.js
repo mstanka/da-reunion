@@ -293,6 +293,10 @@ export const Trips = [
 ];
 
 export const getAllTrips = () => {
+  return Trips;
+};
+
+export const getAllTripsForMap = () => {
   return Trips.map((trip) => ({
     ...trip,
     id: Number(trip.id),
@@ -300,8 +304,3 @@ export const getAllTrips = () => {
     long: Number(trip.long),
   }));
 };
-
-// Namapovat latitude a longitude pomocí PaseInt, aby je to prevedlo na cisla
-
-// const DataForMapToNumbers = () => Trips.map((lat) => parseInt(lat));
-// console.log(DataForMapToNumbers());

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactMapGL, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { getAllTrips } from '../../data/trips';
+import { getAllTripsForMap } from '../../data/trips';
 import styles from './MyMap.module.css';
 import LocationIcon from '../icons/LocationIcon';
 
@@ -50,7 +50,7 @@ const MyMap = () => {
         positionOptions={{ enableHighAccuracy: true }}
         trackUserLocation={true}
       />
-      {getAllTrips().map((place) => (
+      {getAllTripsForMap().map((place) => (
         <React.Fragment key={place.id}>
           <Marker
             latitude={place.lat}
