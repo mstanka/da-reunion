@@ -41,7 +41,7 @@ export const Trips = [
       'Opět doporučujeme dopravu autem. To můžete snadno nechat na parkovišti parking du Bloc Il . Autobusem je třeba jet ze Cilaos linkou 63 od společnosti Alternéo až do zastávky Le Bloc. Kousek od zastávky je už začátek stezky.',
     lat: '-21.0994461',
     long: '55.4800342',
-    difficulty: 'težší',
+    difficulty: 'těžší',
     type: 'hory',
     location: 'střed ostrova',
     featuredImage: '../images/featuredImages/featured-3.jpg',

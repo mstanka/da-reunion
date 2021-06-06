@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 import styles from './Difficulty.module.css';
+=======
+import styles from './Difficulty.module.css'
+>>>>>>> Stashed changes
 
 const Difficulty = ({ value, onChange }) => {
   const handleOnChange = (e) => {
