@@ -8,14 +8,16 @@
   color: var(--primary-color-light);
   font-family: 'Allura', cursive;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
   }
 }
