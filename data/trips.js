@@ -170,7 +170,7 @@ export const Trips = [
     lat: '-21.045095',
     long: '55.2404831',
     difficulty: 'pohodička',
-    type: 'jezera, vodopád',
+    type: 'jezero' && 'vodopád',
     location: 'jihozápad',
     featuredImage: '../images/featuredImages/featured-11.jpg',
     icon: './icons/location.svg',
