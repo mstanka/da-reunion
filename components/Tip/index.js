@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
 import styles from './Tip.module.css';
+import Image from 'next/image';
 
 const Tip = ({ title, phrase, id }) => {
   return (
@@ -8,10 +9,10 @@ const Tip = ({ title, phrase, id }) => {
       <Link href={'/tipy/[id]'} as={`/tipy/${id}`}>
         <a>
           <li className={styles.tip}>
-            <img
-              src={
-                'https://source.unsplash.com/collection/8761243/300x200?' + id
-              }
+            <Image
+              src={`/images/tipy/${id}.jpg`}
+              width={300}
+              height={200}
               alt={title}
             />
             <div className={styles.content}>

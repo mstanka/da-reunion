@@ -11,6 +11,11 @@ const Menu = () => {
           </Link>
         </li>
         <li className={styles.link}>
+          <Link href="/tipy">
+            <a>Obecné tipy</a>
+          </Link>
+        </li>
+        <li className={styles.link}>
           <Link href="/mapa">
             <a>Mapa</a>
           </Link>
