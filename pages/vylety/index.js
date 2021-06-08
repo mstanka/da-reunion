@@ -72,19 +72,12 @@ const TripsPage = ({ trips }) => {
   return (
     <div className="container">
       <div className="container-filter">
-<<<<<<< HEAD
-        <button onClick={() => handleClick()} className="button">
-          <img src="/icons/gps.svg" alt="gps" className="icon" /> Najdi
-          nejbližší výlet
-=======
-        <h1>Inspiruj se našimi výlety...</h1>
-        <h2>Seřaď je podle své polohy</h2>
         <button onClick={() => handleClick()} className="btn">
+          <img src="/icons/gps.svg" alt="gps" className="iconGPS" />
           <span>Seřadit</span>
           <span className="icon">
             <ArrowDownIcon />
           </span>
->>>>>>> f667d1f13b19028502ccc7d60be56036459f178f
         </button>
         <h3 className="center">nebo</h3>
         <h2>výlet vyfiltruj podle</h2>
