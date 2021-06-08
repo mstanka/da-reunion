@@ -39,9 +39,7 @@ a {
 
 .container {
   max-width: 75rem;
-  margin: 7% 7%;
-  min-height: 100vh;
-
+  margin: 3rem auto;
   /* background-color: var(--primary-color-light); */
 }
 
