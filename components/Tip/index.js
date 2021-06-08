@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import ArrowRightIcon from '../icons/ArrowRightIcon';
 import styles from './Tip.module.css';
 import Image from 'next/image';
 

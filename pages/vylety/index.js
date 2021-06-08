@@ -4,6 +4,9 @@ import { getAllTripsForMap } from '../../data/trips';
 import Difficulty from '../../components/Difficulty';
 import Type from '../../components/Type';
 import distance from 'haversine-distance';
+import ArrowDownIcon from '../../components/icons/ArrowDownIcon';
+import DifficultyIcon from '../../components/icons/DifficultyIcon';
+import TypeIcon from '../../components/icons/TypeIcon';
 
 const findMyPosition = () =>
   new Promise((resolve, reject) => {
@@ -69,14 +72,27 @@ const TripsPage = ({ trips }) => {
   return (
     <div className="container">
       <div className="container-filter">
+<<<<<<< HEAD
         <button onClick={() => handleClick()} className="button">
           <img src="/icons/gps.svg" alt="gps" className="icon" /> Najdi
           nejbližší výlet
+=======
+        <h1>Inspiruj se našimi výlety...</h1>
+        <h2>Seřaď je podle své polohy</h2>
+        <button onClick={() => handleClick()} className="btn">
+          <span>Seřadit</span>
+          <span className="icon">
+            <ArrowDownIcon />
+          </span>
+>>>>>>> f667d1f13b19028502ccc7d60be56036459f178f
         </button>
-        <h1>nebo výlet vyfiltruj podle...</h1>
+        <h3 className="center">nebo</h3>
+        <h2>výlet vyfiltruj podle</h2>
         <div className="filters">
           <div>
-            <h2>obtížnosti:</h2>
+            <h3>
+              obtížnosti: <DifficultyIcon className="icon" />
+            </h3>
             <Difficulty
               value={filter.difficulty}
               onChange={(value) =>
@@ -85,7 +101,9 @@ const TripsPage = ({ trips }) => {
             />
           </div>
           <div>
-            <h2>typu:</h2>
+            <h3>
+              typu: <TypeIcon className="icon" />
+            </h3>
             <Type
               value={filter.type}
               onChange={(value) =>

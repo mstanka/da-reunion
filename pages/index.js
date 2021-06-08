@@ -1,12 +1,14 @@
 import TipList from '../components/TipList';
+import TripList from '../components/TripList';
 import { getAllTips } from '../data/tips';
+import { getAllTrips } from '../data/trips';
 
-const Home = ({ tips }) => {
+const Home = ({ tips, trips }) => {
   return (
     <>
       <main>
         <div className="container">
-          <div className="home_container">
+          <div className="center">
             <h1> Láká Vás ostrov Réunion? </h1>
             <h2>
               Letenky a ubytování si ještě zvládnete zařídit sami, ale co na
@@ -31,6 +33,8 @@ const Home = ({ tips }) => {
           </div>
         </div>
         <TipList tips={tips} count={3} />
+        <h2 className="center">Inspiruj se našimi výlety...</h2>
+        <TripList trips={trips} count={3} />
       </main>
     </>
   );
@@ -42,6 +46,7 @@ export const getStaticProps = () => {
   return {
     props: {
       tips: getAllTips(),
+      trips: getAllTrips(),
     },
   };
 };

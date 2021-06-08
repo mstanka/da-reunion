@@ -40,10 +40,9 @@ a {
 .container {
   max-width: 75rem;
   margin: 3rem auto;
-  /* background-color: var(--primary-color-light); */
 }
 
-.home_container {
+.center {
   text-align: center;
 }
 
@@ -52,12 +51,19 @@ a {
   flex-direction: column;
   justify-content: center;
   font-size: 1.3rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .container-filter h1 {
+  text-transform: uppercase;
+  color: var(--primary-color-dark);
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.container-filter h2 {
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-color-dark);
@@ -65,7 +71,7 @@ a {
   font-size: 2rem;
 }
 
-.container-filter h2 {
+.container-filter h3 {
   color: var(--primary-color);
   padding: 1rem 0;
 }
@@ -73,9 +79,15 @@ a {
 .filters {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.button {
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
   cursor: pointer;
   font: inherit;
   font-weight: 700;
@@ -97,6 +109,7 @@ a {
 .btn:focus {
   background-color: var(--primary-color-dark);
   border-color: var(--primary-color-dark);
+  color: var(--primary-color-light);
 }
 
 main {
@@ -104,6 +117,7 @@ main {
 }
 
 .icon {
+<<<<<<< HEAD
   width: 2.5rem;
   position: absolute;
   left: 0.8rem;
@@ -124,22 +138,20 @@ main {
 .container-filter {
   display: flex;
   flex-direction: column;
+=======
+  margin-left: 0.5rem;
+  display: inline-flex;
+>>>>>>> f667d1f13b19028502ccc7d60be56036459f178f
   justify-content: center;
-
-  font-size: 1.3rem;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2rem;
+  align-items: center;
 }
 
-.container-filter h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--primary-color-dark);
-  padding: 1rem 0;
-  font-size: 2rem;
+.icon svg {
+  width: 2rem;
+  height: 2rem;
 }
 
+<<<<<<< HEAD
 .container-filter h2 {
   color: var(--primary-color);
   padding: 1rem 0;
@@ -165,17 +177,25 @@ main {
   text-transform: uppercase;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-  background-color: var(--primary-color-dark);
-  border-color: var(--primary-color-dark);
-}
-
+=======
 @media screen and (min-width: 768px) {
+  .container-filter {
+    padding-top: 4rem;
+    width: 80%;
+  }
+>>>>>>> f667d1f13b19028502ccc7d60be56036459f178f
+
+  .container-filter h1 {
+    font-size: 3rem;
+  }
+
   .filters {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .filters div {
+    flex-basis: 20%;
   }
 }
