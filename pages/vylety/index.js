@@ -70,7 +70,8 @@ const TripsPage = ({ trips }) => {
     <div className="container">
       <div className="container-filter">
         <button onClick={() => handleClick()} className="button">
-          Najdi nejbližší výlet
+          <img src="/icons/gps.svg" alt="gps" className="icon" /> Najdi
+          nejbližší výlet
         </button>
         <h1>nebo výlet vyfiltruj podle...</h1>
         <div className="filters">

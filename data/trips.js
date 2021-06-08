@@ -12,7 +12,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: '../images/featuredImages/featured-1.jpg',
+    featuredImage: '../images/vylety/1/1.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -28,7 +28,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: '../images/featuredImages/featured-2.jpg',
+    featuredImage: '../images/vylety/2/1.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -44,7 +44,7 @@ export const Trips = [
     difficulty: 'těžší',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: '../images/featuredImages/featured-3.jpg',
+    featuredImage: '../images/vylety/3/1.jpg',
     icon: './icons/location.svg',
   },
   {
@@ -60,27 +60,11 @@ export const Trips = [
     difficulty: 'střední',
     type: 'hory',
     location: 'střed ostrova',
-    featuredImage: '../images/featuredImages/featured-4.jpg',
+    featuredImage: '../images/vylety/4/1.jpg',
     icon: './icons/location.svg',
   },
   {
     id: '5',
-    title: 'Vyhlídka na Trou de fer',
-    about: 'vodopád',
-    description:
-      'Trou de Fer je velmi známý reunionský vodopád, lidé ho vybírají pro cayoning. Působivé fotky, které uvidíte na googlu, je možné bohužel udělat pouze z helikoptéry. Nicméně pěšky se dá dojít i na vyhlídku v oblasti Salazie. Zde je potřeba dobrý výhled, to znamená : vybrat si den, kdy neprší a vyrazit brzy ráno. Výlet můžete spojit například s návštěvou Salazie nebo tropického lesa Forêt de Bélouve, který se nachází hned vedle. Vhodné řešení je také najít si ubytování poblíž (my jsme se rozhodli pro Gîte de Bélouve) a odtud jít pěšky rovnou k vyhlídce na vodopád.',
-    transport:
-      'Na toto místo se dostanete opět pouze autem, autobusovou dopravu se nám nepodařilo objevit. Poblíž Gite de Bélouve se nachází hned dvě parkoviště.',
-    lat: '-21.0437811',
-    long: '55.5587392',
-    difficulty: 'pohodička',
-    type: 'vodopád',
-    location: 'střed ostrova',
-    featuredImage: '../images/featuredImages/featured-5.jpg',
-    icon: './icons/location.svg',
-  },
-  {
-    id: '6',
     title: 'Plage du Tremblet',
     about: 'pláž sopečného původu, vodopád',
     description:
@@ -92,11 +76,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž, vodopád',
     location: 'jihovýchod',
-    featuredImage: '../images/featuredImages/featured-6.jpg',
+    featuredImage: '../images/vylety/5/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '7',
+    id: '6',
     title: "Plage de l'Ermitage",
     about: 'pláž',
     description:
@@ -108,11 +92,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
-    featuredImage: '../images/featuredImages/featured-7.jpg',
+    featuredImage: '../images/vylety/6/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '8',
+    id: '7',
     title: 'Boucan Canot',
     about: 'pláž',
     description:
@@ -124,11 +108,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
-    featuredImage: '../images/featuredImages/featured-8.jpg',
+    featuredImage: '../images/vylety/7/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '9',
+    id: '8',
     title: 'Roches Noires',
     about: 'pláž',
     description:
@@ -140,11 +124,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'západ',
-    featuredImage: '../images/featuredImages/featured-9.jpg',
+    featuredImage: '../images/vylety/8/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '10',
+    id: '9',
     title: 'Étang Salé',
     about: 'pláž sopečného púvodu',
     description:
@@ -156,11 +140,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'jihozápad',
-    featuredImage: '../images/featuredImages/featured-10.jpg',
+    featuredImage: '../images/vylety/9/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '11',
+    id: '10',
     title: 'Trois bassins',
     about: 'tři jezírka s vodopády',
     description:
@@ -172,11 +156,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'jezero' && 'vodopád',
     location: 'jihozápad',
-    featuredImage: '../images/featuredImages/featured-11.jpg',
+    featuredImage: '../images/vylety/10/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '12',
+    id: '11',
     title: 'Entre-Deux',
     about: 'malebná kreolská vesnička',
     description:
@@ -188,11 +172,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'město',
     location: 'jihozápad, střed ostrova',
-    featuredImage: '../images/featuredImages/featured-12.jpg',
+    featuredImage: '../images/vylety/11/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '13',
+    id: '12',
     title: 'Cascade de Niagara',
     about: 'vodopád',
     description:
@@ -204,11 +188,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'vodopád',
     location: 'severovýchod',
-    featuredImage: '../images/featuredImages/featured-13.jpg',
+    featuredImage: '../images/vylety/12/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '14',
+    id: '13',
     title: 'Bassin de Manapany',
     about: 'přírodní koupaliště',
     description:
@@ -220,11 +204,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'jezero',
     location: 'jih',
-    featuredImage: '../images/featuredImages/featured-14.jpg',
+    featuredImage: '../images/vylety/13/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '15',
+    id: '14',
     title: 'Cascade de Grand Galet',
     about: 'obrovský vodopád s možností koupání',
     description:
@@ -236,11 +220,11 @@ export const Trips = [
     difficulty: 'střední',
     type: 'vodopád',
     location: 'jih',
-    featuredImage: '../images/featuredImages/featured-15.jpg',
+    featuredImage: '../images/vylety/14/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '16',
+    id: '15',
     title: "Puits des Anglais, Souffleur d'Arbonne",
     about: 'výhled na útesy',
     description:
@@ -252,11 +236,11 @@ export const Trips = [
     difficulty: 'střední',
     type: 'útesy',
     location: 'jih',
-    featuredImage: '../images/featuredImages/featured-16.jpg',
+    featuredImage: '../images/vylety/15/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '17',
+    id: '16',
     title: 'Saint Denis',
     about: 'hlavní město',
     description:
@@ -268,11 +252,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'město',
     location: 'sever',
-    featuredImage: '../images/featuredImages/featured-17.jpg',
+    featuredImage: '../images/vylety/16/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '18',
+    id: '17',
     title: 'Grande Anse',
     about: 'travnatá pláž s palmami',
     description:
@@ -284,11 +268,11 @@ export const Trips = [
     difficulty: 'pohodička',
     type: 'pláž',
     location: 'jih',
-    featuredImage: '../images/featuredImages/featured-18.jpg',
+    featuredImage: '../images/vylety/17/1.jpg',
     icon: './icons/location.svg',
   },
   {
-    id: '19',
+    id: '18',
     title: 'Grand Étang',
     about: 'jezero v úpatí hor',
     description:
@@ -300,7 +284,7 @@ export const Trips = [
     difficulty: 'střední',
     type: 'jezero',
     location: 'východ',
-    featuredImage: '../images/featuredImages/featured-19.jpg',
+    featuredImage: '../images/vylety/18/1.jpg',
     icon: './icons/location.svg',
   },
 ];

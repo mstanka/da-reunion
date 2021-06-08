@@ -84,10 +84,12 @@ a {
   border-radius: 6px;
   color: var(--primary-color-dark);
   padding: 1rem 1.5rem;
+  padding-left: 4.5rem;
   margin: 1rem 0;
   align-self: center;
   text-transform: uppercase;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .btn:hover,
@@ -99,6 +101,13 @@ a {
 
 main {
   border-top: 3px solid var(--dark-color);
+}
+
+.icon {
+  width: 2.5rem;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.4em;
 }
 
 @media screen and (min-width: 768px) {
@@ -150,6 +159,7 @@ main {
   border-radius: 6px;
   color: var(--primary-color-dark);
   padding: 1rem 1.5rem;
+  padding-left: 4.5rem;
   margin: 1rem 0;
   align-self: center;
   text-transform: uppercase;
