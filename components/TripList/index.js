@@ -1,11 +1,11 @@
 import Trip from '../Trip';
 import styles from './TripList.module.css';
 
-const TripList = ({ trips }) => {
+const TripList = ({ trips, count = trips.length }) => {
   return (
     <>
       <ul className={styles.list}>
-        {trips.map((trip) => (
+        {trips.slice(0, count).map((trip) => (
           <Trip
             key={trip.id}
             id={trip.id}

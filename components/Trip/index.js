@@ -1,6 +1,8 @@
 // import Image from 'next/image';
 import Link from 'next/link';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
+import DifficultyIcon from '../icons/DifficultyIcon';
+import TypeIcon from '../icons/TypeIcon';
 import styles from './Trip.module.css';
 
 const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
@@ -20,30 +22,23 @@ const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
         src={'https://source.unsplash.com/collection/8761243/300x200'}
         alt={title}
       />
-      <div className={styles.content}>
+      <div className="center">
         <div className={styles.summary}>
           <h2>{title}</h2>
+          <div className={styles.about}>{about}</div>
           <div className={styles.label}>
-            <p>
-              {difficulty} | {type}
-            </p>
-          </div>
-          <div className={styles.about}>
-            <p>{about}</p>
+            <DifficultyIcon />
+            <span> {difficulty} </span>
+            <TypeIcon />
+            <span>{type}</span>
           </div>
         </div>
-        <div>
-          <p>{location}</p>
-        </div>
-        {distance && (
-          <div>
-            <p>Vzdálenost od vás: {distance} km</p>
-          </div>
-        )}
+        <div>{location}</div>
+        {distance && <div>Vzdálenost od vás: {distance} km</div>}
         <div className={styles.actions}>
           <Link href={'/vylety/[id]'} as={`/vylety/${id}`}>
             <a>
-              <span>Explore Trip</span>
+              <span>Poznej víc</span>
               <span className={styles.icon}>
                 <ArrowRightIcon />
               </span>
