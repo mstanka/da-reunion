@@ -20,27 +20,32 @@ const Menu = () => {
       <ul className={menuOpened ? styles.nav : styles.closed}>
         <li className={menuOpened ? styles.link : styles.closed}>
           <Link href="/">
-            <a className={!menuOpened ? styles.closed : ' '}>Domů</a>
+            <a>Domů</a>
+          </Link>
+        </li>
+        <li className={menuOpened ? styles.link : styles.closed}>
+          <Link href="/tipy">
+            <a>Obecné tipy</a>
           </Link>
         </li>
         <li className={menuOpened ? styles.link : styles.closed}>
           <Link href="/mapa">
-            <a className={!menuOpened ? styles.closed : ' '}>Mapa</a>
+            <a>Mapa</a>
           </Link>
         </li>
         <li className={menuOpened ? styles.link : styles.closed}>
           <Link href="/vylety">
-            <a className={!menuOpened ? styles.closed : ' '}>Výlety</a>
+            <a>Výlety</a>
           </Link>
         </li>
         <li className={menuOpened ? styles.link : styles.closed}>
           <Link href="/galerie">
-            <a className={!menuOpened ? styles.closed : ' '}>Galerie</a>
+            <a>Galerie</a>
           </Link>
         </li>
-        <li className={menuOpened ? styles.link : styles.link.closed}>
+        <li className={menuOpened ? styles.link : styles.closed}>
           <Link href="/onas">
-            <a className={!menuOpened ? styles.closed : ' '}>O nás</a>
+            <a>O nás</a>
           </Link>
         </li>
       </ul>
