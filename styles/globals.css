@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@400;600;700&display=swap');
 
 :root {
   --primary-color: #8d6d54;
@@ -8,6 +8,9 @@
   --primary-color-dark: #523722;
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
+
+  --font-family-main:  'Josefin Sans', sans-serif;
+  --font-family-heading:  'Allura', cursive;
 }
 
 * {

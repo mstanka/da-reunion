@@ -17,7 +17,7 @@
     list-style-type: none;
     padding: 0;
     font-size: 2rem;
-    font-family: 'Allura', cursive;
+    font-family: var(--font-family-heading);
     font-weight: bolder;
     margin-top: -2rem;
   }

@@ -23,7 +23,7 @@
 
 .page_content {
   color: var(--dark-color);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-family-main);
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 1rem;
