@@ -84,9 +84,9 @@ a {
 }
 
 .btn {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   min-width: 200px;
   cursor: pointer;
   font: inherit;
@@ -96,7 +96,6 @@ a {
   border-radius: 6px;
   color: var(--primary-color-dark);
   padding: 1rem 1.5rem;
-  padding-left: 4.5rem;
   margin: 1rem 0;
   align-self: center;
   text-transform: uppercase;
@@ -117,7 +116,7 @@ main {
 }
 
 .icon {
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -128,12 +127,6 @@ main {
   height: 2rem;
 }
 
-.iconGPS {
-  width: 2.5rem;
-  position: absolute;
-  left: 0.8rem;
-  top: 0.4em;
-}
 
 @media screen and (min-width: 768px) {
   .container-filter {

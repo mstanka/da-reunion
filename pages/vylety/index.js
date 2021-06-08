@@ -4,9 +4,9 @@ import { getAllTripsForMap } from '../../data/trips';
 import Difficulty from '../../components/Difficulty';
 import Type from '../../components/Type';
 import distance from 'haversine-distance';
-import ArrowDownIcon from '../../components/icons/ArrowDownIcon';
 import DifficultyIcon from '../../components/icons/DifficultyIcon';
 import TypeIcon from '../../components/icons/TypeIcon';
+import GpsIcon from '../../components/icons/GpsIcon';
 
 const findMyPosition = () =>
   new Promise((resolve, reject) => {
@@ -73,11 +73,10 @@ const TripsPage = ({ trips }) => {
     <div className="container">
       <div className="container-filter">
         <button onClick={() => handleClick()} className="btn">
-          <img src="/icons/gps.svg" alt="gps" className="iconGPS" />
-          <span>Seřadit</span>
           <span className="icon">
-            <ArrowDownIcon />
+            <GpsIcon />
           </span>
+          <span>Seřaď výlety podle vzdálenosti</span>
         </button>
         <h3 className="center">nebo</h3>
         <h2>výlet vyfiltruj podle</h2>
