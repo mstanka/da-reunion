@@ -8,7 +8,7 @@
   --primary-color-dark: #523722;
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
-  --dark-color-overlay: rgba(10, 4, 3, .3);
+  --dark-color-overlay: rgba(10, 4, 3, 0.3);
 
   --font-family-main: 'Josefin Sans', sans-serif;
   --font-family-heading: 'Allura', cursive;
@@ -52,12 +52,16 @@ a {
   text-align: center;
 }
 
+.py {
+  padding: 2rem 0
+}
+
 .container-filter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.3rem;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 3rem;
 }
@@ -92,7 +96,7 @@ a {
 .btn {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   min-width: 200px;
   cursor: pointer;
   font: inherit;
@@ -165,10 +169,21 @@ a {
   }
 
   .filters div {
-    flex-basis: 20%;
+    flex-basis: 30%;
   }
 
   .content_trips {
     margin: 3rem 12rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-filter {
+    width: 50%;
+  }
+
+  .filters {
+    justify-content: center;
+    gap: 10%;
   }
 }

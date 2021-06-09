@@ -107,7 +107,7 @@ const TripsPage = ({ trips }) => {
       </div>
 
       {filteredTrips.length === 0 ? (
-        <h3>Zadaným filtrům neodpovídá žádný výlet.</h3>
+        <h3 className="center py">Zadaným filtrům neodpovídá žádný výlet.</h3>
       ) : (
         <TripList trips={filteredTrips} />
       )}
