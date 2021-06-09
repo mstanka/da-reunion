@@ -11,7 +11,7 @@ const Header = () => {
             <div>Réunion </div> <div>našima očima</div>
             <div className={styles.image}>
               <Image
-                src={'/images/plaz_uvodni.jpg'}
+                src={'/images/uvodni.jpg'}
                 width={2600}
                 height={900}
                 alt="Uvodní fotka"
