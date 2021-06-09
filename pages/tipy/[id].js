@@ -14,12 +14,10 @@ const Tip = ({ tip }) => {
   // />;
   return (
     <>
-      <img
-        src={'https://source.unsplash.com/collection/8761243/1000x700'}
-        alt={tip.title}
-      />
-      <h1>{tip.title}</h1>
-      <p>{tip.phrase}</p>
+      <div className="content_tips">
+        <h1>{tip.title}</h1>
+        <p>{tip.description}</p>
+      </div>
     </>
   );
 };

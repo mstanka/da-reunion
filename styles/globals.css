@@ -53,7 +53,7 @@ a {
 }
 
 .py {
-  padding: 2rem 0
+  padding: 2rem 0;
 }
 
 .container-filter {
@@ -137,8 +137,10 @@ a {
   height: 2rem;
 }
 
-.content_trips {
+.content_trips,
+.content_tips {
   text-align: justify;
+  max-width: var(--max-width);
   margin: 3rem 3rem;
 }
 
@@ -152,14 +154,14 @@ a {
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+h1 container_ @media screen and (min-width: 768px) {
   .container-filter {
     padding-top: 4rem;
     width: 80%;
   }
 
-  .container-filter h1 {
-    font-size: 3rem;
+  .short_info_trips h1 {
+    text-align: center;
   }
 
   .filters {
@@ -172,8 +174,9 @@ a {
     flex-basis: 30%;
   }
 
-  .content_trips {
-    margin: 3rem 12rem;
+  .content_trips,
+  .content_tips {
+    margin: 3rem 6rem;
   }
 }
 

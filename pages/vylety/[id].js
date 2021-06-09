@@ -14,9 +14,15 @@ const Trip = ({ trip }) => {
         height={900}
         alt={trip.title}
       /> */}
+      <a href="/vylety">
+        <button> Zpět na seznam výletů </button>
+      </a>
+      <a href="/mapa">
+        <button> Zpět na mapu výletů </button>
+      </a>
       <div className="content_trips">
         <div className="short_info_trips">
-          <h1>{trip.title}</h1>
+          <h1 clssName="title_trips">{trip.title}</h1>
           <p>{trip.about}</p>
           <p>{trip.difficulty}</p>
           <p>{trip.type}</p>
