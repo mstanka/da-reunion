@@ -11,6 +11,7 @@
     max-width: var(--max-width);
     display: block;
     border-bottom: 3px solid var(--dark-color);
+    background-color: white;
     z-index: 10;
   }
 
