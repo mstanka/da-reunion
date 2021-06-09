@@ -8,6 +8,7 @@
   --primary-color-dark: #523722;
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
+  --dark-color-overlay: rgba(10, 4, 3, .3);
 
   --font-family-main: 'Josefin Sans', sans-serif;
   --font-family-heading: 'Allura', cursive;
