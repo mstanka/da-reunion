@@ -1,20 +1,30 @@
 import Image from 'next/image';
 import { getAllTrips } from '../../data/trips';
+import Gallery from 'react-photo-gallery';
+import { photos } from '../../data/photosTrips/1/photos';
 
 const trips = getAllTrips();
 
 const Trip = ({ trip }) => {
   return (
     <>
-      <Image
+      {/* <Image
         src={`/images/featuredImages/featured-${trip.id}.jpg`}
         width={1640}
         height={900}
         alt={trip.title}
-      />
-      <h1>{trip.title}</h1>
-      <p>{trip.about}</p>
-      <p>{trip.description}</p>
+      /> */}
+      <div className="content_trips">
+        <div className="short_info_trips">
+          <h1>{trip.title}</h1>
+          <p>{trip.about}</p>
+          <p>{trip.difficulty}</p>
+          <p>{trip.type}</p>
+          <p>{trip.location}</p>{' '}
+        </div>
+        <p>{trip.description}</p>
+        <Gallery photos={photos} />
+      </div>
     </>
   );
 };
