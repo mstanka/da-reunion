@@ -3,12 +3,11 @@ import ReactMapGL, {
   Marker,
   Popup,
   GeolocateControl,
+  NavigationControl,
   WebMercatorViewport,
 } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { getAllTripsForMap } from '../../data/trips';
 import styles from './MyMap.module.css';
-import LocationIcon from '../icons/LocationIcon';
 import Link from 'next/link';
 
 const applyToArray = (func, array) => func.apply(Math, array);
@@ -32,7 +31,7 @@ const getBounds = (markers) => {
 };
 
 const MyMap = ({ trips }) => {
-  console.log(trips);
+  // console.log(trips);
   const [viewport, setViewport] = useState(getBounds(trips));
   // latitude: -21.1307379,
   // longitude: 55.5364801,
@@ -67,14 +66,13 @@ const MyMap = ({ trips }) => {
       {...viewport}
       onViewportChange={(nextViewport) => setViewport(nextViewport)}
     >
+      <NavigationControl className={styles.navigation} />
       <GeolocateControl
-        style={{
-          right: 10,
-          top: 10,
-        }}
+        className={styles.navigation_geo}
         positionOptions={{ enableHighAccuracy: true }}
         trackUserLocation={true}
       />
+
       {trips.map((place) => (
         <React.Fragment key={place.id}>
           <Marker
