@@ -9,8 +9,10 @@
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
 
-  --font-family-main:  'Josefin Sans', sans-serif;
-  --font-family-heading:  'Allura', cursive;
+  --font-family-main: 'Josefin Sans', sans-serif;
+  --font-family-heading: 'Allura', cursive;
+
+  --max-width: 120rem; /*1920px*/
 }
 
 * {
@@ -41,7 +43,7 @@ a {
 }
 
 .container {
-  max-width: 75rem;
+  max-width: var(--max-width);
   margin: 3rem auto;
 }
 
@@ -114,9 +116,9 @@ a {
   color: var(--primary-color-light);
 }
 
-main {
+/* main {
   border-top: 3px solid var(--dark-color);
-}
+} */
 
 .icon {
   margin: 0 0.5rem;
@@ -129,7 +131,6 @@ main {
   width: 2rem;
   height: 2rem;
 }
-
 
 @media screen and (min-width: 768px) {
   .container-filter {

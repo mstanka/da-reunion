@@ -12,7 +12,7 @@ const Header = () => {
             <div className={styles.image}>
               <Image
                 src={'/images/uvodni.jpg'}
-                width={2600}
+                width={1920}
                 height={900}
                 alt="Uvodní fotka"
               />

@@ -1,11 +1,9 @@
-
-
 .header {
   min-height: 4rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
   font-family: var(--font-family-heading);
-  padding: 2rem;
   padding: 0;
-  margin: 0;
 }
 
 .header a {
