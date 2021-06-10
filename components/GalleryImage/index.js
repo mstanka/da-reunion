@@ -15,8 +15,8 @@ const GalleryImage = ({ title, id, numberOfImages }) => {
         <a>
           <Image
             src={`/images/vylety/${id}/${1}.jpg`}
-            width={600}
-            height={400}
+            width={500}
+            height={320}
             alt={title}
           />
         </a>
