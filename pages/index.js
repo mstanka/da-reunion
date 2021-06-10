@@ -89,7 +89,7 @@ const Home = ({ tips, trips }) => {
                 </Link>{' '}
               </h2>
               <h3>
-                třeba podle toho, <br></br> jestli Vás víc zajímá horolezení
+                třeba podle toho, <br></br> jestli Vás víc zajímají horské túry
                 nebo koupání:
               </h3>
 
