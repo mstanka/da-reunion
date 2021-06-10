@@ -19,12 +19,14 @@ const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
 
   return (
     <li className={styles.trip}>
-      <Image
-        src={`/images/vylety/${id}/1.jpg`}
-        width={300}
-        height={200}
-        alt={title}
-      />
+      <span className={styles.image}>
+        <Image
+          src={`/images/vylety/${id}/1.jpg`}
+          width={300}
+          height={200}
+          alt={title}
+        />
+      </span>
       <div className="center">
         <div className={styles.summary}>
           <h2>{title}</h2>

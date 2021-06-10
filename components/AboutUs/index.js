@@ -8,9 +8,9 @@ const AboutUs = () => {
         <section className={styles.intro}>
           <p className={styles.introtext}>
             Jsme holky, co ostrov prolezly skrz naskrz, nasbíraly poznatky každá
-            svou cestou a během pobytů nasbíraly tipy od místních. Toto vše jsme
-            jsme Vám sepsaly do našich stránek tak, aby se Vám informace co
-            nejrychleji a nejkomfortněji hledaly.
+            svou cestou a během pobytů vyzvídaly tipy od místních. Toto vše jsme
+            jsme Vám sepsaly do našich stránek tak, aby se Vám informace o
+            zajímavých místech co nejrychleji a nejkomfortněji hledaly.
           </p>
         </section>
         <div className={styles.wrapper}>

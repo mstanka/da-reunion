@@ -6,6 +6,7 @@
   min-height: 4rem;
   max-width: var(--max-width);
   margin: 0 auto;
+  margin-top: 3rem;
   background: linear-gradient(var(--primary-color), var(--primary-color-dark));
   color: var(--primary-color-light);
   font-family: var(--font-family-main);

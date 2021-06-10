@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './Tip.module.css';
 import Image from 'next/image';
+// import {useState} from 'react';
 
 const Tip = ({ title, phrase, id }) => {
   return (
@@ -17,9 +18,9 @@ const Tip = ({ title, phrase, id }) => {
             <div className={styles.content}>
               <div className={styles.summary}>
                 <h2>{title}</h2>
-                <div className={styles.label}>
-                  <p>{phrase}</p>
-                </div>
+              </div>
+              <div className={styles.label}>
+                <p>{phrase}</p>
               </div>
             </div>
           </li>

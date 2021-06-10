@@ -10,6 +10,7 @@
   align-items: center;
   gap: 1rem;
   max-width: 19rem;
+  border: 2px solid var(--primary-color-dark);
 }
 
 .image {
@@ -17,6 +18,12 @@
   width: 100%;
   object-fit: cover;
   height: 14rem;
+}
+
+.image:hover {
+  filter: sepia(#8d6d54, 80%);
+  filter: grayscale(80%);
+  cursor: pointer;
 }
 
 .content {

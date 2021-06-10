@@ -25,7 +25,8 @@ const Home = ({ tips, trips }) => {
                 </Link>{' '}
                 a uvidíte sami:{' '}
               </h2>
-
+            </section>
+            <section>
               <div className="Homepage_section">
                 <Gallery photos={photos.slice(0, 3)} />
                 <Link href="/galerie">
@@ -48,6 +49,8 @@ const Home = ({ tips, trips }) => {
                 </Link>
                 :
               </h2>
+            </section>
+            <section>
               <div className="section__tips">
                 <TipList tips={tips} count={3} />
                 <Link href="/tipy">
@@ -73,6 +76,8 @@ const Home = ({ tips, trips }) => {
                 </Link>
                 :
               </h2>
+            </section>
+            <section>
               <Link href="/mapa">
                 <img
                   src="/images/map_homepage.jpg"
@@ -92,7 +97,8 @@ const Home = ({ tips, trips }) => {
                 třeba podle toho, <br></br> jestli Vás víc zajímají horské túry
                 nebo koupání:
               </h3>
-
+            </section>
+            <section>
               <div className="Homepage_section">
                 <TripList trips={trips} count={3} />
                 <Link href="/vylety">
