@@ -7,20 +7,29 @@ const GalleryImage = ({ title, id, numberOfImages }) => {
   for (let i = 1; i < numberOfImages + 1; i++) {
     imgArr.fill(i, i);
   }
-// imgArr.forEach((img) =>
+
+  let srcLinks = [];
+
+  for (let i = 1; i < numberOfImages + 1; i++) {
+    srcLinks = [
+      ...srcLinks,
+      {
+        href: `/images/vylety/[id]/[i]`,
+        as: `/images/vylety/${id}/${i}`,
+        src: `/images/vylety/${id}/${i}.jpg`,
+      },
+    ];
+  }
 
   return (
     <>
-      <Link href={'/images/vylety/[id]/[1]'} as={`/images/vylety/${id}/${1}`}>
-        <a>
-          <Image
-            src={`/images/vylety/${id}/${1}.jpg`}
-            width={500}
-            height={320}
-            alt={title}
-          />
-        </a>
-      </Link>
+      {srcLinks.map((link) => (
+        <Link href={link.href} as={link.as} key={link.src}>
+          <a>
+            <Image src={link.src} width={500} height={320} alt={title} />
+          </a>
+        </Link>
+      ))}
     </>
   );
 };
