@@ -60,8 +60,8 @@ const AboutUs = () => {
             <div className={styles.img_us}>
               <Image
                 src={'/images/kata.jpg'}
-                width={600}
-                height={400}
+                width={1200}
+                height={800}
                 alt="Káťa"
               />
             </div>
