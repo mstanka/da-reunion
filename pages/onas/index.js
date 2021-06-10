@@ -1,8 +1,8 @@
-import AboutUs from '../components/AboutUs';
+import AboutUs from '../../components/AboutUs';
 
 const Onas = () => {
   return (
-    <div>
+    <div className="container">
       <AboutUs />
     </div>
   );
