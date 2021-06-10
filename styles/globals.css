@@ -175,10 +175,6 @@ a {
     width: 80%;
   }
 
-  .container-filter h1 {
-    font-size: 3rem;
-  }
-
   .filters {
     flex-direction: row;
     justify-content: space-around;
