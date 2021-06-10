@@ -154,14 +154,29 @@ a {
   padding-bottom: 0;
 }
 
-h1 container_ @media screen and (min-width: 768px) {
+/* .Homepage_section {
+ width: 90%;
+} */
+
+.link_to_page {
+  font-family: var(--font-family-heading);
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: var(--primary-color-dark);
+}
+
+.link_to_page:hover {
+  color: var(--primary-color-light);
+}
+
+@media screen and (min-width: 768px) {
   .container-filter {
     padding-top: 4rem;
     width: 80%;
   }
 
-  .short_info_trips h1 {
-    text-align: center;
+  .container-filter h1 {
+    font-size: 3rem;
   }
 
   .filters {

@@ -9,32 +9,60 @@ const Home = ({ tips, trips }) => {
       <main>
         <div className="container">
           <div className="center">
-            <h1> Láká Vás ostrov Réunion? </h1>
             <h2>
-              Letenky a ubytování si ještě zvládnete zařídit sami, ale co na
-              místě?
+              Láká Vás ostrov Réunion? Nejste si jistí, zda je to pro Vás ?
             </h2>
-            <p>
-              Času bude málo, letenky přecejen něco stály, ubytování taky,
-              nechcete přece jít jen tak naslepo a doufat, že se výlet povede.
-              Anebo naopak jít podle tištěného průvodce na ty nejturističtější
-              místa, kde bude vždycky plno lidí a kde Vás to zaručeně otráví
-              hned na začátku.
-            </p>
-            <h3>
-              Na našich stránkách pojímáme cestování na ostrově
-              <i> Réunion trochu jinak</i>.
-            </h3>
-            <p>
-              Inspirujte se tipy na výlety od nás, co jsme ostrov už prolezly
-              skrz naskrz <br></br>anebo tipy od místních, které jsme pro Vás
-              během našich pobytů získaly.
-            </p>
+            <h2>
+              Mrkněte na naši{' '}
+              <a href="/galerie" className="link_to_page">
+                Galerii
+              </a>{' '}
+              a uvidíte sami:{' '}
+            </h2>
+            <div className="Homepage_section">
+              {/* <Gallery photos={photos} /> */}
+              <a href="/galerie">
+                <h2>šipka doprava na konci řádku</h2>
+              </a>
+            </div>
+
+            <h2>
+              Zajímá Vás, co čekat na ostrově? Mrkněte do našich{' '}
+              <a href="/tipy" className="link_to_page">
+                Tipů
+              </a>
+              :
+            </h2>
+            <div className="Homepage_section">
+              <TipList tips={tips} count={3} />
+              <a href="/tipy">
+                <h2>šipka doprava na konci řádku</h2>
+              </a>
+            </div>
+            <h2>
+              Jste rozhodnuti, že poletíte? Pojďme spolu naplánovat výlety !
+            </h2>
+            <h2>
+              Na naše Výlety se můžete buď proklikat přes{' '}
+              <a href="/mapa" className="link_to_page">
+                Mapu
+              </a>
+              :
+            </h2>
+            <h2>
+              anebo si vyfiltrujte{' '}
+              <a href="/vylety" className="link_to_page">
+                Výlety
+              </a>{' '}
+              přesně podle toho, <br></br> jestli Vás víc zajímá horolezení nebo
+              koupání:
+            </h2>
+            <div className="Homepage_section">
+              <TripList trips={trips} count={3} />
+              <a href="/vylety">šipka doprava na konci řádku</a>
+            </div>
           </div>
         </div>
-        <TipList tips={tips} count={3} />
-        <h2 className="center">Inspiruj se našimi výlety...</h2>
-        <TripList trips={trips} count={3} />
       </main>
     </>
   );
