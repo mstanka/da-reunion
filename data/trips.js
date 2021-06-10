@@ -14,6 +14,7 @@ export const Trips = [
     location: 'střed ostrova',
     featuredImage: '../images/vylety/1/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 17,
   },
   {
     id: '2',
@@ -30,6 +31,7 @@ export const Trips = [
     location: 'střed ostrova',
     featuredImage: '../images/vylety/2/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 11,
   },
   {
     id: '3',
@@ -46,6 +48,7 @@ export const Trips = [
     location: 'střed ostrova',
     featuredImage: '../images/vylety/3/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 5,
   },
   {
     id: '4',
@@ -62,6 +65,7 @@ export const Trips = [
     location: 'střed ostrova',
     featuredImage: '../images/vylety/4/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 22,
   },
   {
     id: '5',
@@ -78,6 +82,7 @@ export const Trips = [
     location: 'jihovýchod',
     featuredImage: '../images/vylety/5/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 7,
   },
   {
     id: '6',
@@ -94,6 +99,7 @@ export const Trips = [
     location: 'západ',
     featuredImage: '../images/vylety/6/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 10,
   },
   {
     id: '7',
@@ -110,6 +116,7 @@ export const Trips = [
     location: 'západ',
     featuredImage: '../images/vylety/7/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 6,
   },
   {
     id: '8',
@@ -126,6 +133,7 @@ export const Trips = [
     location: 'západ',
     featuredImage: '../images/vylety/8/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 4,
   },
   {
     id: '9',
@@ -142,6 +150,7 @@ export const Trips = [
     location: 'jihozápad',
     featuredImage: '../images/vylety/9/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 6,
   },
   {
     id: '10',
@@ -158,6 +167,7 @@ export const Trips = [
     location: 'jihozápad',
     featuredImage: '../images/vylety/10/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 4,
   },
   {
     id: '11',
@@ -174,6 +184,7 @@ export const Trips = [
     location: 'jihozápad, střed ostrova',
     featuredImage: '../images/vylety/11/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 8,
   },
   {
     id: '12',
@@ -190,6 +201,7 @@ export const Trips = [
     location: 'severovýchod',
     featuredImage: '../images/vylety/12/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 5,
   },
   {
     id: '13',
@@ -206,6 +218,7 @@ export const Trips = [
     location: 'jih',
     featuredImage: '../images/vylety/13/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 6,
   },
   {
     id: '14',
@@ -222,6 +235,7 @@ export const Trips = [
     location: 'jih',
     featuredImage: '../images/vylety/14/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 8,
   },
   {
     id: '15',
@@ -238,6 +252,7 @@ export const Trips = [
     location: 'jih',
     featuredImage: '../images/vylety/15/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 5,
   },
   {
     id: '16',
@@ -254,6 +269,7 @@ export const Trips = [
     location: 'sever',
     featuredImage: '../images/vylety/16/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 7,
   },
   {
     id: '17',
@@ -270,6 +286,7 @@ export const Trips = [
     location: 'jih',
     featuredImage: '../images/vylety/17/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 5,
   },
   {
     id: '18',
@@ -286,6 +303,7 @@ export const Trips = [
     location: 'východ',
     featuredImage: '../images/vylety/18/1.jpg',
     icon: './icons/location.svg',
+    numberOfImages: 10,
   },
 ];
 
