@@ -3,17 +3,14 @@
   border: 1px solid black;
   border-radius: 0.5rem;
   overflow: hidden;
-  background-color: rgb(255, 254, 246);
-  margin: 1rem;
   display: flex;
-  /* flex-direction: column; */
-  gap: 1rem;
+  flex-direction: column;
   min-width: 300px;
   min-height: 270px;
-  width: 24%;
+  width: 20%;
   position: relative;
   text-align: center;
-  text-shadow: 1.5px 1.5px black;
+  /* text-shadow: 1.5px 1.5px black; */
 }
 
 .tip img {
@@ -94,12 +91,11 @@
 
   .tip img {
     filter: blur(1px);
-    filter: grayscale(80%);
-    filter: sepia(#8d6d54, 50%);
   }
 
   .tip:hover img {
-    filter: none;
+    filter: grayscale(80%);
+    filter: sepia(#8d6d54, 50%);
   }
 
   .image {

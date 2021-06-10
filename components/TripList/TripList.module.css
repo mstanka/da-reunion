@@ -1,6 +1,6 @@
 .list {
   max-width: var(max-width);
-  margin: 5rem auto;
+  margin: 0 auto;
   padding-inline-start: 0;
   display: flex;
   flex-wrap: wrap;

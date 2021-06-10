@@ -1,8 +1,9 @@
 .list {
+  max-width: var(max-width);
+  margin: 0 auto;
+  padding-inline-start: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 80rem;
-  margin: 5rem auto;
   justify-content: center;
+  align-items: center;
 }

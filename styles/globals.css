@@ -170,6 +170,7 @@ a {
 
 .link_to_page:hover {
   color: var(--primary-color-light);
+  cursor: pointer;
 }
 
 .link_to_homepage {
@@ -181,6 +182,8 @@ a {
   font-size: 2rem;
   display: flex;
   width: 12rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .know_more p {
@@ -199,6 +202,33 @@ a {
   color: var(--primary-color-light);
   outline: 2px dotted var(--primary-color-light);
   cursor: pointer;
+}
+
+.map_homepage {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map_homepage:hover {
+  cursor: pointer;
+  filter: grayscale(60%);
+  /* filter: sepia(#8d6d54, 50%); */
+}
+
+.container_homepage h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+section {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.section_tips {
+  margin-top: -5rem;
+  margin-bottom: -5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -224,6 +254,10 @@ a {
 
   .link_to_page {
     font-size: 2.5rem;
+  }
+
+  .know_more {
+    margin-left: 80%;
   }
 }
 
