@@ -5,6 +5,7 @@ import { getAllTips } from '../data/tips';
 import { getAllTrips } from '../data/trips';
 import ArrowRightIcon from '../components/icons/ArrowRightIcon';
 import Gallery from 'react-photo-gallery';
+// import GalleryImageList from '../components/GalleryImageList';
 import { photos } from '../data/photos';
 
 const Home = ({ tips, trips }) => {
@@ -112,6 +113,7 @@ const Home = ({ tips, trips }) => {
                 </Link>
               </div>
             </section>
+            <div className="space"></div>
           </div>
         </div>
       </main>

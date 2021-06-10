@@ -239,10 +239,10 @@ export const Trips = [
   },
   {
     id: '15',
-    title: "Puits des Anglais, Souffleur d'Arbonne",
+    title: 'Puits des Anglais',
     about: 'výhled na útesy',
     description:
-      "Puits des Anglais i Souffleur d'Arbonne jsou obě dvě místa s krásným výhledem na útesy. Mnohem známější z těchto dvou je Puits des Anglais, nicméně mnohonásobně hezčí výhled zažijete na Souffleur d'Arbonne. U Puits des Anglais doporučuji se pouze zastavit, udělat si pár fotek a dál popojít/popojet k Souffleur d'Arbonne. Zde začíná pěšinka podél útesu mezi jehličnatými stromy, která na mnoha místech vybízí k zastavení se a pikniku. Po celou dobu procházky budete mít výhled na útesy a lámající se vlny, úplně jak z kalendářových fotek. Tuto pěšinku jsem objevila náhodou, nikde v průvodci se o ní nepsalo a výhled z ní mi vyrazil dech. Když už budete na místě, můžete zavítat do zahrady tropických reunionských rostlin, koření a vůní (Jardin des Parfums et des Épices). Vstup za cca 5 eur, zastávka na cca hoďku. ",
+      "Puits des Anglais a nedaleko ležící Souffleur d'Arbonne jsou obě dvě místa s krásným výhledem na útesy. Mnohem známější z těchto dvou je Puits des Anglais, nicméně mnohonásobně hezčí výhled zažijete na Souffleur d'Arbonne. U Puits des Anglais doporučuji se pouze zastavit, udělat si pár fotek a dál popojít/popojet k Souffleur d'Arbonne. Zde začíná pěšinka podél útesu mezi jehličnatými stromy, která na mnoha místech vybízí k zastavení se a pikniku. Po celou dobu procházky budete mít výhled na útesy a lámající se vlny, úplně jak z kalendářových fotek. Tuto pěšinku jsem objevila náhodou, nikde v průvodci se o ní nepsalo a výhled z ní mi vyrazil dech. Když už budete na místě, můžete zavítat do zahrady tropických reunionských rostlin, koření a vůní (Jardin des Parfums et des Épices). Vstup za cca 5 eur, zastávka na cca hoďku. ",
     transport:
       "Autobusová zastávka Souffleur d'Arbonne, kousek od ní je pár parkovacích míst, protože se ale naštěstí nejedná o známé místo, nebývají moc často obsazená.",
     lat: '-21.3688136',
