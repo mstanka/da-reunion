@@ -21,9 +21,11 @@ const Trip = ({ trip }) => {
       <div className="content_trips">
         <div className="btns_wrapper">
           <Link href="/vylety">
-            <button className="btn_back">
-              <p>Zpět na seznam výletů</p>{' '}
-            </button>
+            <a>
+              <button className="btn_back">
+                <p>Zpět na seznam výletů</p>{' '}
+              </button>
+            </a>
           </Link>
           <Link href="/mapa">
             <button className="btn_back">
@@ -32,7 +34,7 @@ const Trip = ({ trip }) => {
           </Link>
         </div>
         <div className="short_info_trips">
-          <h1 className="title_trips">{trip.title}</h1>
+          <h1>{trip.title}</h1>
           <p>{trip.about}</p>
           <div className="icons_wrapper">
             <DifficultyIcon />

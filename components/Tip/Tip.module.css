@@ -22,9 +22,9 @@
   filter: grayscale(80%);
 }
 
-.content_hidden {
+/* .content_hidden {
   display: none;
-}
+} */
 
 .content {
   background-color: var(--primary-color-light);
