@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { getAllTrips } from '../../data/trips';
-import Gallery from 'react-photo-gallery';
-import { photos } from '../../data/photosTrips/1/photos';
+import GalleryImage from '../../components/GalleryImage';
 
 const trips = getAllTrips();
 
@@ -29,7 +28,11 @@ const Trip = ({ trip }) => {
           <p>{trip.location}</p>{' '}
         </div>
         <p>{trip.description}</p>
-        <Gallery photos={photos} />
+        <GalleryImage
+          title={trip.title}
+          id={trip.id}
+          numberOfImages={trip.numberOfImages}
+        />
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { SRLWrapper } from 'simple-react-lightbox';
+import styles from './GalleryImage.module.css';
 
 const GalleryImage = ({ title, id, numberOfImages }) => {
   const srcLinks = [];
@@ -13,15 +15,18 @@ const GalleryImage = ({ title, id, numberOfImages }) => {
   }
 
   return (
-    <>
-      {srcLinks.map((link) => (
-        <Link href={link.href} as={link.as} key={link.src}>
-          <a>
-            <Image src={link.src} width={370} height={240} alt={title} />
-          </a>
-        </Link>
-      ))}
-    </>
+    <SRLWrapper>
+      <h2 className={styles.title}>{title}</h2>
+      <div className={styles.wrapper}>
+        {srcLinks.map((link) => (
+          <Link href={link.href} as={link.as} key={link.src}>
+            <a>
+              <Image src={link.src} width={370} height={240} alt={title} />
+            </a>
+          </Link>
+        ))}
+      </div>
+    </SRLWrapper>
   );
 };
 
