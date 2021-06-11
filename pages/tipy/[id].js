@@ -15,6 +15,11 @@ const Tip = ({ tip }) => {
   return (
     <>
       <div className="content_tips">
+        <a href="/tipy">
+          <button className="btn_back btn_back_tips">
+            <p>Zpět na Obecné tipy</p>{' '}
+          </button>
+        </a>
         <h1>{tip.title}</h1>
         <p>{tip.description}</p>
       </div>
