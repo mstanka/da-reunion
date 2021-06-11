@@ -22,26 +22,3 @@ const GalleryImageList = ({ trips }) => {
 };
 
 export default GalleryImageList;
-
-//  {
-//    trips.map((trip) => {
-//      for (let i = 1; i < trip.numberOfImages + 1; i++) {
-//        return (
-//          <Link
-//            href={'/images/vylety/[id]/[i]'}
-//            as={`/images/vylety/${trip.id}/${i}`}
-//            key={`${trip.id}/${i}`}
-//          >
-//            <a>
-//              <Image
-//                src={`/images/vylety/${trip.id}/${i}.jpg`}
-//                width={600}
-//                height={400}
-//                alt="title"
-//              />
-//            </a>
-//          </Link>
-//        );
-//      }
-//    });
-//  }

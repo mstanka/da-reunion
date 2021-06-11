@@ -2,23 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const GalleryImage = ({ title, id, numberOfImages }) => {
-  const imgArr = new Array(numberOfImages);
+  const srcLinks = [];
 
-  for (let i = 1; i < numberOfImages + 1; i++) {
-    imgArr.fill(i, i);
-  }
-
-  let srcLinks = [];
-
-  for (let i = 1; i < numberOfImages + 1; i++) {
-    srcLinks = [
-      ...srcLinks,
-      {
-        href: `/images/vylety/[id]/[i]`,
-        as: `/images/vylety/${id}/${i}`,
-        src: `/images/vylety/${id}/${i}.jpg`,
-      },
-    ];
+  for (let i = 1; i <= numberOfImages; i++) {
+    srcLinks.push({
+      href: `/images/vylety/[id]/[i]`,
+      as: `/images/vylety/${id}/${i}`,
+      src: `/images/vylety/${id}/${i}.jpg`,
+    });
   }
 
   return (
@@ -26,7 +17,7 @@ const GalleryImage = ({ title, id, numberOfImages }) => {
       {srcLinks.map((link) => (
         <Link href={link.href} as={link.as} key={link.src}>
           <a>
-            <Image src={link.src} width={500} height={320} alt={title} />
+            <Image src={link.src} width={370} height={240} alt={title} />
           </a>
         </Link>
       ))}
