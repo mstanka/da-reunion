@@ -9,6 +9,7 @@ import ReactMapGL, {
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './MyMap.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const applyToArray = (func, array) => func.apply(Math, array);
 
@@ -84,7 +85,7 @@ const MyMap = ({ trips }) => {
             <img
               src={place.icon}
               alt={place.title}
-              className={styles.img}
+              className={styles.marker}
               onClick={() => {
                 setChosenPopup(place.id);
               }}
@@ -100,16 +101,19 @@ const MyMap = ({ trips }) => {
               closeOnClick={false}
             >
               <div className={styles.popup_content}>
-                <p>{place.title}</p>
-                <p>{place.about}</p>
-
                 <Link href={`/vylety/${place.id}`}>
-                  <img
-                    src={place.featuredImage}
-                    className={styles.imgPopup}
-                    width={150}
-                    height={100}
-                  />
+                  <a>
+                    <div>
+                      <h2>{place.title}</h2>
+                      <p>{place.about}</p>
+                    </div>
+                    <Image
+                      src={place.featuredImage}
+                      className={styles.imgPopup}
+                      width={150}
+                      height={100}
+                    />
+                  </a>
                 </Link>
               </div>
             </Popup>
