@@ -15,7 +15,7 @@ const Header = () => {
             <Image
               src={'/images/uvodni.jpg'}
               width={1920}
-              height={900}
+              height={682}
               alt="Uvodní fotka"
             />
           </div>
