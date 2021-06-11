@@ -19,38 +19,38 @@ const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
 
   return (
     <li className={styles.trip}>
-      <span className={styles.image}>
-        <Image
-          src={`/images/vylety/${id}/1.jpg`}
-          width={300}
-          height={200}
-          alt={title}
-        />
-      </span>
-      <div className="center">
-        <div className={styles.summary}>
-          <h2>{title}</h2>
-          <div className={styles.about}>{about}</div>
-          <div className={styles.label}>
-            <DifficultyIcon />
-            <span> {difficulty} </span>
-            <TypeIcon />
-            <span>{type}</span>
+      <Link href={'/vylety/[id]'} as={`/vylety/${id}`}>
+        <a>
+          <div className={styles.image}>
+            <Image
+              src={`/images/vylety/${id}/1.jpg`}
+              width={384}
+              height={250}
+              alt={title}
+            />
           </div>
-        </div>
-        <div>{location}</div>
-        {distance && <div>Vzdálenost od vás: {distance} km</div>}
-        <div className={styles.actions}>
-          <Link href={'/vylety/[id]'} as={`/vylety/${id}`}>
-            <a>
+          <div className="center">
+            <div className={styles.summary}>
+              <h2>{title}</h2>
+              <div className={styles.about}>{about}</div>
+              <div className={styles.label}>
+                <DifficultyIcon />
+                <span> {difficulty} </span>
+                <TypeIcon />
+                <span>{type}</span>
+              </div>
+            </div>
+            <div>{location}</div>
+            {distance && <div>Vzdálenost od vás: {distance} km</div>}
+            <div className={styles.actions}>
               <span>Poznej víc</span>
               <span className={styles.icon}>
                 <ArrowRightIcon />
               </span>
-            </a>
-          </Link>
-        </div>
-      </div>
+            </div>
+          </div>
+        </a>
+      </Link>
     </li>
   );
 };

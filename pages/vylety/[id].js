@@ -1,4 +1,5 @@
-import Image from 'next/image';
+// import Image from 'next/image';
+import Link from 'next/link'
 import { getAllTrips } from '../../data/trips';
 import GalleryImage from '../../components/GalleryImage';
 
@@ -15,16 +16,16 @@ const Trip = ({ trip }) => {
       /> */}
 
       <div className="content_trips">
-        <a href="/vylety">
+        <Link href="/vylety">
           <button className="btn_back btn_back_trips_1">
             <p>Zpět na seznam výletů</p>{' '}
           </button>
-        </a>
-        <a href="/mapa">
+        </Link>
+        <Link href="/mapa">
           <button className="btn_back btn_back_trips_2">
             <p>Zpět na mapu výletů</p>{' '}
           </button>
-        </a>
+        </Link>
         <div className="short_info_trips">
           <h1 clssName="title_trips">{trip.title}</h1>
           <p>{trip.about}</p>

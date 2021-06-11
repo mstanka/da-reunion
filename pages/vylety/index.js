@@ -23,6 +23,7 @@ const findMyPosition = () =>
 
     if (!navigator?.geolocation) {
       console.log('Geolocation is not supported by your browser');
+      alert('Geolocation is not supported by your browser');
     } else {
       console.log('locating');
       navigator.geolocation.getCurrentPosition(success, error);
