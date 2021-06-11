@@ -4,14 +4,9 @@
   overflow: hidden;
   background-color: var(--primary-color-light);
   margin: 1rem;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem; */
   max-width: 24rem;
-  /* border: 2px solid var(--primary-color-dark); */
 }
+
 .trip a {
   color: var(--primary-color-dark);
 }
@@ -21,7 +16,6 @@
   height: 40%;
   width: 100%;
   object-fit: cover;
-  /* height: 14rem; */
 }
 
 .image:hover {

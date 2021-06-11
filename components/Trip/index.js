@@ -3,6 +3,7 @@ import Link from 'next/link';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
 import DifficultyIcon from '../icons/DifficultyIcon';
 import TypeIcon from '../icons/TypeIcon';
+import LocationIcon from '../../components/icons/LocationIcon';
 import styles from './Trip.module.css';
 import Image from 'next/image';
 
@@ -40,7 +41,8 @@ const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
                 <span>{type}</span>
               </div>
             </div>
-            <div>{location}</div>
+            <LocationIcon />
+            <span>{location}</span>
             {distance && <div>Vzdálenost od vás: {distance} km</div>}
             <div className={styles.actions}>
               <span>Poznej víc</span>
