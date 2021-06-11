@@ -4,26 +4,17 @@ import { getAllTips } from '../../data/tips';
 const tips = getAllTips();
 
 const Tip = ({ tip }) => {
-  // src={`/images/${trip.id}.jpg`}
-
-  // <Image
-  //   src={'https://source.unsplash.com/collection/8761243/1640x900'}
-  //   width={1640}
-  //   height={900}
-  //   alt={trip.title}
-  // />;
   return (
-    <>
-      <div className="content_tips">
-        <a href="/tipy">
-          <button className="btn_back btn_back_tips">
-            <p>Zpět na Obecné tipy</p>{' '}
-          </button>
-        </a>
-        <h1>{tip.title}</h1>
-        <p>{tip.description}</p>
-      </div>
-    </>
+    <div className="content_tips">
+      <a href="/tipy">
+        <button className="btn_back btn_back_tips">
+          <p>Zpět na Obecné tipy</p>{' '}
+        </button>
+      </a>
+      <h1>{tip.title}</h1>
+      <p>{tip.description}</p>
+      <Image src={tip.image} width={1920} height={1280} />
+    </div>
   );
 };
 
