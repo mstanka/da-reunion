@@ -4,9 +4,7 @@ import TripList from '../components/TripList';
 import { getAllTips } from '../data/tips';
 import { getAllTrips } from '../data/trips';
 import ArrowRightIcon from '../components/icons/ArrowRightIcon';
-import Gallery from 'react-photo-gallery';
-// import GalleryImageList from '../components/GalleryImageList';
-import { photos } from '../data/photos';
+import GalleryImage from '../components/GalleryImage';
 
 const Home = ({ tips, trips }) => {
   return (
@@ -29,7 +27,11 @@ const Home = ({ tips, trips }) => {
             </section>
             <section>
               <div className="Homepage_section">
-                <Gallery photos={photos.slice(0, 3)} />
+                <GalleryImage
+                  title={undefined}
+                  id={trips[3].id}
+                  numberOfImages={3}
+                />
                 <Link href="/galerie">
                   <div className="know_more">
                     <p>další fotky </p>
