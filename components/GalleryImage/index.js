@@ -21,7 +21,7 @@ const GalleryImage = ({ title, id, numberOfImages }) => {
         {srcLinks.map((link) => (
           <Link href={link.href} as={link.as} key={link.src}>
             <a>
-              <Image src={link.src} width={300} height={200} alt={title} />
+              <Image src={link.src} width={370} height={240} alt={title} />
             </a>
           </Link>
         ))}
