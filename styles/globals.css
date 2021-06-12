@@ -61,8 +61,7 @@ a {
   justify-content: center;
   font-size: 1.3rem;
   width: 95%;
-  margin: 0 auto;
-  padding-top: 3rem;
+  margin: 2.5rem auto 4rem auto;
 }
 
 .container-filter h1 {
@@ -81,7 +80,7 @@ a {
 }
 
 .container-filter h3 {
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   padding: 1rem 0;
 }
 
@@ -90,25 +89,39 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
+}
+
+.filters > div {
+  background: linear-gradient(var(--primary-color-light), var(--primary-color));
+  border: 1px solid var(--primary-color-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  width: 100%;
+  padding-left: 3rem;
+  align-self: stretch;
+}
+
+.filters > div:first-child {
+  margin-bottom: 1rem;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 200px;
   cursor: pointer;
   font: inherit;
   font-weight: 700;
-  background-color: var(--primary-color-light);
-  border: 1px solid var(--primary-color-dark);
+  background: linear-gradient(var(--primary-color-light), var(--primary-color));
+  border: 1px solid var(--primary-color-light);
   border-radius: 6px;
   color: var(--primary-color-dark);
   padding: 1rem 1.5rem;
   margin: 1rem 0;
   align-self: center;
   text-transform: uppercase;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px 6px 2px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
@@ -268,20 +281,32 @@ a {
   margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 550px) {
+  .filters > div {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container-filter {
-    padding-top: 4rem;
     width: 80%;
+    margin-bottom: 4rem;
   }
 
   .filters {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    /* gap: 2rem; */
   }
 
-  .filters div {
-    flex-basis: 30%;
+  .filters > div {
+    width: 40%;
+  }
+
+  .filters > div:first-child {
+    margin-bottom: 0;
   }
 
   .link_to_page {
@@ -307,12 +332,15 @@ a {
 
 @media screen and (min-width: 1024px) {
   .container-filter {
-    width: 50%;
+    width: 60%;
   }
 
   .filters {
     justify-content: center;
-    gap: 10%;
+  }
+
+  .filters > div {
+    width: 35%;
   }
 
   .description {
