@@ -10,9 +10,10 @@ const Home = ({ tips, trips }) => {
   return (
     <>
       <main>
-        <div className="container container_homepage">
+        <div className="container">
           <div className="center">
-            <section>
+            {/*section - intro gallery*/}
+            <section className="section_content">
               <h2>
                 Láká Vás ostrov Réunion? <br></br> Nebo si zatím nejste jisti,
                 zda je to pro Vás ?
@@ -20,31 +21,26 @@ const Home = ({ tips, trips }) => {
               <h2>
                 Otevřete si naši{' '}
                 <Link href="/galerie">
-                  <span className="link_to_page">Galerii</span>
+                  <a>
+                    <span className="link_to_page">Galerii</span>
+                  </a>
                 </Link>{' '}
                 a uvidíte sami:{' '}
               </h2>
+              <GalleryImage
+                title={undefined}
+                id={trips[3].id}
+                numberOfImages={3}
+              />
+              <Link href="/galerie">
+                <a className="know_more">
+                  <span>další fotky </span>
+                  <ArrowRightIcon />
+                </a>
+              </Link>
             </section>
-            <section>
-              <div className="Homepage_section">
-                <GalleryImage
-                  title={undefined}
-                  id={trips[3].id}
-                  numberOfImages={3}
-                />
-                <Link href="/galerie">
-                  <div className="know_more">
-                    <p>další fotky </p>
-                    <span className="arrow_know_more">
-                      {' '}
-                      <ArrowRightIcon />
-                    </span>
-                  </div>
-                </Link>
-              </div>
-            </section>
-
-            <section>
+            {/*section - tips*/}
+            <section className="section_content">
               <h2>
                 Zajímá Vás, co čekat na ostrově? Mrkněte do našich{' '}
                 <Link href="/tipy">
@@ -52,23 +48,16 @@ const Home = ({ tips, trips }) => {
                 </Link>
                 :
               </h2>
+              <TipList tips={tips} count={3} />
+              <Link href="/tipy">
+                <a className="know_more">
+                  <span>další tipy</span>
+                  <ArrowRightIcon />
+                </a>
+              </Link>
             </section>
-            <section>
-              <div className="section__tips">
-                <TipList tips={tips} count={3} />
-                <Link href="/tipy">
-                  <div className="know_more">
-                    <p>další tipy</p>
-                    <span className="arrow_know_more">
-                      {' '}
-                      <ArrowRightIcon />
-                    </span>
-                  </div>
-                </Link>
-              </div>
-            </section>
-
-            <section>
+            {/*section - map*/}
+            <section className="section_content">
               <h2>
                 Jste rozhodnuti, že poletíte? Pojďme spolu naplánovat výlety !
               </h2>
@@ -79,8 +68,6 @@ const Home = ({ tips, trips }) => {
                 </Link>
                 :
               </h2>
-            </section>
-            <section>
               <Link href="/mapa">
                 <img
                   src="/images/map_homepage.jpg"
@@ -89,7 +76,8 @@ const Home = ({ tips, trips }) => {
                 />
               </Link>
             </section>
-            <section>
+            {/*section - trips*/}
+            <section className="section_content">
               <h2>
                 anebo si vyfiltrujte{' '}
                 <Link href="/vylety">
@@ -100,22 +88,14 @@ const Home = ({ tips, trips }) => {
                 třeba podle toho, <br></br> jestli Vás víc zajímají horské túry
                 nebo koupání:
               </h3>
+              <TripList trips={trips} count={3} />
+              <Link href="/vylety">
+                <a className="know_more">
+                  <span>další výlety</span>
+                  <ArrowRightIcon />
+                </a>
+              </Link>
             </section>
-            <section>
-              <div className="Homepage_section">
-                <TripList trips={trips} count={3} />
-                <Link href="/vylety">
-                  <div className="know_more">
-                    <p>další výlety</p>
-                    <span className="arrow_know_more">
-                      {' '}
-                      <ArrowRightIcon />
-                    </span>
-                  </div>
-                </Link>
-              </div>
-            </section>
-            <div className="space"></div>
           </div>
         </div>
       </main>

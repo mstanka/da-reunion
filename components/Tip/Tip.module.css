@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: 2px solid var(--primary-color-dark);
   height: 24rem;
   margin: 1rem;
   background-color: var(--primary-color-light);
@@ -22,9 +21,6 @@
   filter: brightness(0.8);
 }
 
-/* .content_hidden {
-  display: none;
-} */
 
 .content {
   background-color: var(--primary-color-light);
