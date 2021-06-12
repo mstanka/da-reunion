@@ -58,13 +58,13 @@
 
   .link a:hover,
   .link a:active {
-    color: var(--primary-color-light);
+    color: var(--primary-color-light2);
     outline: 2px dotted var(--primary-color-light);
     /* font-size: 3rem; */
   }
 
   .link_active a {
-    color: var(--primary-color-light);
+    color: var(--primary-color-light2);
     outline: 2px dotted var(--primary-color-light);
   }
 }
