@@ -6,18 +6,20 @@ const tips = getAllTips();
 
 const Tip = ({ tip }) => {
   return (
-    <div className="content_tips">
-      <div className="btns_wrapper">
-        <Link href="/tipy">
-          <a className="btn_back">
-            <span>Zpět na Obecné tipy</span>{' '}
-          </a>
-        </Link>
-      </div>
-      <div className="short_info_tips description ">
-        <h1>{tip.title}</h1>
-        <p>{tip.description}</p>
-        <Image src={tip.image} width={1920} height={1280} />
+    <div className="container">
+      <div className="content_tips">
+        <div className="btns_wrapper">
+          <Link href="/tipy">
+            <a className="btn_back">
+              <span>Zpět na Obecné tipy</span>{' '}
+            </a>
+          </Link>
+        </div>
+        <div className="short_info_tips description ">
+          <h1>{tip.title}</h1>
+          <p>{tip.description}</p>
+          <Image src={tip.image} width={1920} height={1280} />
+        </div>
       </div>
     </div>
   );
