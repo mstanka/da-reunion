@@ -18,7 +18,7 @@
 
 .tip img:hover {
   filter: sepia(#8d6d54, 80%);
-  filter: grayscale(80%);
+  filter: brightness(0.8);
 }
 
 

@@ -19,20 +19,16 @@ const Trip = ({ trip }) => {
       /> */}
 
       <div className="content_trips">
-        <div className="btns_wrapper">
-          <Link href="/vylety">
-            <a>
-              <button className="btn_back">
-                <p>Zpět na seznam výletů</p>{' '}
-              </button>
-            </a>
-          </Link>
-          <Link href="/mapa">
-            <button className="btn_back">
-              <p>Zpět na mapu výletů</p>{' '}
-            </button>
-          </Link>
-        </div>
+        <a href="/vylety">
+          <button className="btn_back btn_back_trips_1">
+            <p>Zpět na seznam výletů</p>{' '}
+          </button>
+        </a>
+        <a href="/mapa">
+          <button className="btn_back btn_back_trips_2">
+            <p>Zpět na mapu výletů</p>{' '}
+          </button>
+        </a>
         <div className="short_info_trips">
           <h1>{trip.title}</h1>
           <p>{trip.about}</p>
