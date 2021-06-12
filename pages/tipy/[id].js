@@ -6,7 +6,6 @@ const tips = getAllTips();
 
 const Tip = ({ tip }) => {
   return (
-<<<<<<< Updated upstream
     <div className="content_tips">
       <Link href="/tipy">
         <a className="btn_back">
@@ -17,20 +16,6 @@ const Tip = ({ tip }) => {
       <p>{tip.description}</p>
       <Image src={tip.image} width={1920} height={1280} />
     </div>
-=======
-    <>
-      <div className="content_tips">
-        <a href="/tipy">
-          <button className="btn_back btn_back_tips">
-            <p>Zpět na Obecné tipy</p>{' '}
-          </button>
-        </a>
-        <h1>{tip.title}</h1>
-        <p>{tip.description}</p>
-        <Image src={tip.image} width={1920} height={1280} />
-      </div>
-    </>
->>>>>>> Stashed changes
   );
 };
 
