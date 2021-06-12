@@ -228,20 +228,23 @@ a {
   border-color: var(--primary-color-dark);
   color: var(--primary-color-light);
   font-weight: bold;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn_back {
   display: inline-block;
   max-width: 15rem;
   width: 100%;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   padding: 0.7rem 1.6rem;
   border-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-color-dark);
-  border-color: var(--primary-color-dark);
+  border: 1px solid var(--primary-color-dark);
   color: var(--primary-color-light);
   font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .know_more:hover,
@@ -250,9 +253,7 @@ a {
 .btn_back:hover,
 .btn_back:active,
 .btn_back:focus {
-  cursor: pointer;
   background-color: var(--primary-color-light);
-  border: 1px solid var(--primary-color-dark);
   color: var(--primary-color-dark);
 }
 
