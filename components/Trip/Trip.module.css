@@ -20,7 +20,7 @@
 
 .image:hover {
   filter: sepia(#8d6d54, 80%);
-  filter: grayscale(80%);
+  filter: brightness(0.8);
   cursor: pointer;
 }
 
@@ -60,6 +60,6 @@
 
 @media screen and (min-width: 768px) {
   .trip {
-   max-width: 19rem;
+    max-width: 19rem;
   }
 }
