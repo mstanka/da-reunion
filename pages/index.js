@@ -27,11 +27,13 @@ const Home = ({ tips, trips }) => {
                 </Link>{' '}
                 a uvidíte sami:{' '}
               </h2>
-              <GalleryImage
-                title={undefined}
-                id={trips[3].id}
-                numberOfImages={3}
-              />
+              <div className="container_gallery">
+                <GalleryImage
+                  title={undefined}
+                  id={trips[3].id}
+                  numberOfImages={3}
+                />
+              </div>
               <Link href="/galerie">
                 <a className="know_more">
                   <span>další fotky </span>
@@ -69,11 +71,13 @@ const Home = ({ tips, trips }) => {
                 :
               </h2>
               <Link href="/mapa">
-                <img
-                  src="/images/map_homepage.jpg"
-                  alt="statická mapa"
-                  className="map_homepage"
-                />
+          
+                  <img
+                    src="/images/map_homepage.jpg"
+                    alt="statická mapa"
+                    className="map_homepage"
+                  />
+             
               </Link>
             </section>
             {/*section - trips*/}
