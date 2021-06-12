@@ -62,7 +62,7 @@
     /* font-size: 3rem; */
   }
 
-  .link_active {
+  .link_active a {
     color: var(--primary-color-light);
     outline: 2px dotted var(--primary-color-light);
   }
