@@ -295,6 +295,14 @@ a {
   .description {
     width: 70%;
   }
+
+  .short_info_tips {
+    width: 85%;
+  }
+
+  .short_info_tips p {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -309,5 +317,13 @@ a {
 
   .description {
     width: 60%;
+  }
+
+  .short_info_tips {
+    width: 85%;
+  }
+
+  .short_info_tips p {
+    font-size: 1.3rem;
   }
 }
