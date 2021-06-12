@@ -55,6 +55,10 @@ a {
   padding: 2rem 0;
 }
 
+img {
+  filter: contrast(1.2);
+}
+
 .container-filter {
   display: flex;
   flex-direction: column;
