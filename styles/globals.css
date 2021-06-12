@@ -242,7 +242,9 @@ section {
 
 .content_trips {
   position: relative;
-  margin: 13rem 6rem;
+  margin: 13rem 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn_back {
@@ -254,18 +256,15 @@ section {
   border-color: var(--primary-color-dark);
   color: var(--primary-color-light);
   position: absolute;
-  right: -1rem;
   top: -3rem;
 }
 
 .btn_back_trips_1 {
   top: -11rem;
-  right: 30%;
 }
 
 .btn_back_trips_2 {
   top: -6rem;
-  right: 30%;
 }
 
 .btn_back:hover,
