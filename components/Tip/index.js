@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import styles from './Tip.module.css';
 import Image from 'next/image';
-// import {useState} from 'react';
 
 const Tip = ({ title, phrase, id }) => {
   return (
-    <div className={styles.actions}>
+    <li className={styles.actions}>
       <Link href={'/tipy/[id]'} as={`/tipy/${id}`}>
         <a>
-          <li className={styles.tip}>
+          <div className={styles.tip}>
             <Image
               src={`/images/tipy/${id}.jpg`}
-              width={300}
-              height={200}
+              width={384}
+              height={250}
               alt={title}
             />
             <div className={styles.content}>
@@ -23,10 +22,10 @@ const Tip = ({ title, phrase, id }) => {
                 <p>{phrase}</p>
               </div>
             </div>
-          </li>
+          </div>
         </a>
       </Link>
-    </div>
+    </li>
   );
 };
 

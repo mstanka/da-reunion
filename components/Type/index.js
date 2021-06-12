@@ -40,9 +40,9 @@ const Type = ({ value, onChange }) => {
       <label>
         <input
           type="checkbox"
-          value="jezera"
+          value="jezero"
           onChange={handleOnChange}
-          checked={value.includes('jezera')}
+          checked={value.includes('jezero')}
         />
         <span className={styles.text}>jezero</span>
       </label>

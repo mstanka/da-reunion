@@ -41,6 +41,7 @@ p {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
@@ -121,15 +122,12 @@ a {
   color: var(--primary-color-light);
 }
 
-/* main {
-  border-top: 3px solid var(--dark-color);
-} */
-
 .icon {
   margin: 0 0.5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  fill: var(--primary-color-dark);
 }
 
 .icon svg {
@@ -137,16 +135,30 @@ a {
   height: 2rem;
 }
 
+.icons_wrapper {
+  max-width: 18rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .content_trips,
 .content_tips {
   text-align: justify;
   max-width: var(--max-width);
-  margin: 3rem 3rem;
+  margin: 4rem auto;
+}
+
+.description {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .short_info_trips {
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--primary-color-dark);
 }
 
 .short_info_trips p {
@@ -230,21 +242,11 @@ section {
   margin-bottom: 0;
 }
 
-.section_tips {
-  margin-top: -5rem;
-  margin-bottom: -5rem;
-}
-
-.content_tips {
-  position: relative;
-  margin: 6rem 6rem;
-}
-
-.content_trips {
-  position: relative;
-  margin: 13rem 3rem;
+.btns_wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 3rem;
 }
 
 .btn_back {
@@ -255,16 +257,6 @@ section {
   background-color: var(--primary-color-dark);
   border-color: var(--primary-color-dark);
   color: var(--primary-color-light);
-  position: absolute;
-  top: -3rem;
-}
-
-.btn_back_trips_1 {
-  top: -11rem;
-}
-
-.btn_back_trips_2 {
-  top: -6rem;
 }
 
 .btn_back:hover,
@@ -281,10 +273,6 @@ section {
   padding: 0;
   font-weight: bold;
   font-size: 0.9rem;
-}
-
-a {
-  text-decoration: none;
 }
 
 .arrow_btn_back {
@@ -332,19 +320,8 @@ a {
     height: 4rem;
   }
 
-  .btn_back_trips_1 {
-    top: -6rem;
-    right: -1rem;
-  }
-
-  .btn_back_trips_2 {
-    top: -1rem;
-    right: -1rem;
-  }
-
-  .content_trips {
-    position: relative;
-    margin: 8em 6rem;
+  .description {
+    width: 70%;
   }
 }
 
@@ -356,5 +333,9 @@ a {
   .filters {
     justify-content: center;
     gap: 10%;
+  }
+
+  .description {
+    width: 60%;
   }
 }
