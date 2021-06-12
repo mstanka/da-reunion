@@ -1,23 +1,12 @@
-// import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
 import DifficultyIcon from '../icons/DifficultyIcon';
 import TypeIcon from '../icons/TypeIcon';
 import LocationIcon from '../../components/icons/LocationIcon';
 import styles from './Trip.module.css';
-import Image from 'next/image';
 
 const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
-  // src={`/images/${id}.jpg`}
-
-  // <Image
-  //   src={'https://source.unsplash.com/collection/8761243/500x400'}
-  //   alt={title}
-  //   width={500}
-  //   height={400}
-  //   className={styles.image}
-  // />;
-
   return (
     <li className={styles.trip}>
       <Link href={'/vylety/[id]'} as={`/vylety/${id}`}>
