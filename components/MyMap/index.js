@@ -28,7 +28,7 @@ const getBounds = (markers) => {
   }).fitBounds(cornersLngLat, { padding: 200 });
 
   const { longitude, latitude, zoom } = viewport;
-  return { longitude, latitude, zoom: zoom + 2 };
+  return { longitude, latitude, zoom: zoom + 1 };
 };
 
 const MyMap = ({ trips }) => {
@@ -40,87 +40,89 @@ const MyMap = ({ trips }) => {
   const [chosenPopup, setChosenPopup] = useState(null);
 
   return (
-    <ReactMapGL
-      mapStyle={{
-        version: 8,
-        sources: {
-          'raster-tiles': {
-            type: 'raster',
-            tiles: ['https://mapserver.mapy.cz/base-m/{z}-{x}-{y}'],
-            tileSize: 256,
-            attribution:
-              'Mapové podklady od <a target="_top" rel="noopener" href="https://mapy.cz/">Seznam.cz</a> a <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>.',
+    <div className={styles.container}>
+      <ReactMapGL
+        mapStyle={{
+          version: 8,
+          sources: {
+            'raster-tiles': {
+              type: 'raster',
+              tiles: ['https://mapserver.mapy.cz/base-m/{z}-{x}-{y}'],
+              tileSize: 256,
+              attribution:
+                'Mapové podklady od <a target="_top" rel="noopener" href="https://mapy.cz/">Seznam.cz</a> a <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>.',
+            },
           },
-        },
-        layers: [
-          {
-            id: 'simple-tiles',
-            type: 'raster',
-            source: 'raster-tiles',
-            minzoom: 0,
-            maxzoom: 20,
-          },
-        ],
-      }}
-      width="100%"
-      height={1000}
-      {...viewport}
-      onViewportChange={(nextViewport) => setViewport(nextViewport)}
-    >
-      <NavigationControl className={styles.navigation} />
-      <GeolocateControl
-        className={styles.navigation_geo}
-        positionOptions={{ enableHighAccuracy: true }}
-        trackUserLocation={true}
-      />
+          layers: [
+            {
+              id: 'simple-tiles',
+              type: 'raster',
+              source: 'raster-tiles',
+              minzoom: 0,
+              maxzoom: 20,
+            },
+          ],
+        }}
+        width="100%"
+        height={700}
+        {...viewport}
+        onViewportChange={(nextViewport) => setViewport(nextViewport)}
+      >
+        <NavigationControl className={styles.navigation} />
+        <GeolocateControl
+          className={styles.navigation_geo}
+          positionOptions={{ enableHighAccuracy: true }}
+          trackUserLocation={true}
+        />
 
-      {trips.map((place) => (
-        <React.Fragment key={place.id}>
-          <Marker
-            latitude={place.lat}
-            longitude={place.long}
-            offsetLeft={-25}
-            offsetTop={-50}
-          >
-            <img
-              src={place.icon}
-              alt={place.title}
-              className={styles.marker}
-              onClick={() => {
-                setChosenPopup(place.id);
-              }}
-            />
-          </Marker>
-          {chosenPopup === place.id ? (
-            <Popup
-              className={styles.popup}
+        {trips.map((place) => (
+          <React.Fragment key={place.id}>
+            <Marker
               latitude={place.lat}
               longitude={place.long}
-              offsetTop={-60}
-              onClose={() => setChosenPopup(null)}
-              closeOnClick={false}
+              offsetLeft={-25}
+              offsetTop={-50}
             >
-              <div className={styles.popup_content}>
-                <Link href={`/vylety/${place.id}`}>
-                  <a>
-                    <div>
-                      <h2>{place.title}</h2>
-                      <p>{place.about}</p>
-                    </div>
-                    <Image
-                      src={place.featuredImage}
-                      className={styles.imgPopup}
-                      width={150}
-                      height={100}
-                    />
-                  </a>
-                </Link>
-              </div>
-            </Popup>
-          ) : null}
-        </React.Fragment>
-      ))}
-    </ReactMapGL>
+              <img
+                src={place.icon}
+                alt={place.title}
+                className={styles.marker}
+                onClick={() => {
+                  setChosenPopup(place.id);
+                }}
+              />
+            </Marker>
+            {chosenPopup === place.id ? (
+              <Popup
+                className={styles.popup}
+                latitude={place.lat}
+                longitude={place.long}
+                offsetTop={-60}
+                onClose={() => setChosenPopup(null)}
+                closeOnClick={false}
+              >
+                <div className={styles.popup_content}>
+                  <Link href={`/vylety/${place.id}`}>
+                    <a>
+                      <div>
+                        <h2>{place.title}</h2>
+                        <p>{place.about}</p>
+                      </div>
+                      <Image
+                        src={place.featuredImage}
+                        className={styles.imgPopup}
+                        width={150}
+                        height={100}
+                      />
+                    </a>
+                  </Link>
+                </div>
+              </Popup>
+            ) : null}
+          </React.Fragment>
+        ))}
+      </ReactMapGL>
+    </div>
   );
 };
 
