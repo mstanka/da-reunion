@@ -4,7 +4,7 @@ import HamburgerOpenedIcon from '../icons/HamburgerOpenedIcon';
 import HamburgerClosedIcon from '../icons/HamburgerClosedIcon';
 import styles from './MobileMenu.module.css';
 
-const Menu = () => {
+const MobileMenu = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   const handleMenu = () => {
@@ -53,4 +53,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MobileMenu;
