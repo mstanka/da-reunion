@@ -1,28 +1,26 @@
 .header {
-  position: relative;
   max-width: var(--max-width);
+  height: 15vh;
   margin: 0 auto;
   font-family: var(--font-family-heading);
+  background: url('/images/uvodni.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .website_name {
-  position: absolute;
-  top: 1.5rem;
-  left: 16%;
   color: var(--primary-color-light);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10%;
+  height: 15vh;
   z-index: 10;
-  width: 70%;
+  width: 100%;
+  font-size: 2.4rem;
   margin: 0 auto;
   padding-bottom: 0;
   background: var(--dark-color-overlay);
-}
-
-.website_name > div {
-  flex-basis: 40%;
 }
 
 @media screen and (min-width: 550px) {
@@ -32,18 +30,29 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    height: 20vh;
+  }
+
   .website_name {
     flex-direction: row;
     justify-content: space-around;
-    font-size: 5rem;
+    font-size: 4rem;
     width: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 1rem;
-    text-align: center;
+    height: 20vh;
+    text-align: left;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 30vh;
   }
 
-  .website_name > div {
-    flex-basis: 70%;
+  .website_name {
+    height: 30vh;
+    font-size: 5.5rem;
+    padding-left: 3rem;
   }
 }

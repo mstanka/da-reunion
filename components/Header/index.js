@@ -12,12 +12,7 @@ const Header = () => {
             <div>našima očima</div>
           </h1>
           <div className={styles.image}>
-            <Image
-              src={'/images/uvodni.jpg'}
-              width={1920}
-              height={682}
-              alt="Uvodní fotka"
-            />
+        
           </div>
         </header>
       </Link>
@@ -26,3 +21,10 @@ const Header = () => {
 };
 
 export default Header;
+
+    // <Image
+    //   src={'/images/uvodni.jpg'}
+    //   width={1920}
+    //   height={682}
+    //   alt="Uvodní fotka"
+    // />;
