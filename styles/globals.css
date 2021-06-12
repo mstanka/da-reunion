@@ -159,9 +159,18 @@ a {
   color: var(--primary-color-dark);
 }
 
+.short_info_tips {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .short_info_trips p {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.short_info_tips p {
+  text-align: justify;
 }
 
 .section_content {
