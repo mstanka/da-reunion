@@ -12,7 +12,7 @@ const Home = ({ tips, trips }) => {
       <div className="container">
         <div className="center">
           {/*section - intro gallery*/}
-          <section className="section_content">
+          <section className="section_content section_content_first">
             <h2>
               Láká Vás ostrov Réunion? <br></br> Nebo si zatím nejste jisti, zda
               je to pro Vás ?
@@ -69,17 +69,19 @@ const Home = ({ tips, trips }) => {
               </Link>
               :
             </h2>
-            <Link href="/mapa">
-              <img
-                src="/images/map_homepage.jpg"
-                alt="statická mapa"
-                className="map_homepage"
-              />
-            </Link>
+            <div className="map_homepage_wrapper">
+              <Link href="/mapa">
+                <img
+                  src="/images/map_homepage.jpg"
+                  alt="statická mapa"
+                  className="map_homepage"
+                />
+              </Link>
+            </div>
           </section>
           {/*section - trips*/}
           <section className="section_content">
-            <h2>
+            <h2 className="vylety_h2">
               anebo si vyfiltrujte{' '}
               <Link href="/vylety">
                 <span className="link_to_page">Výlety</span>

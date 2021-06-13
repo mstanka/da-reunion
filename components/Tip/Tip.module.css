@@ -4,7 +4,10 @@
   flex-wrap: wrap;
   height: 24rem;
   margin: 1rem;
-  background-color: var(--primary-color-light);
+  background: linear-gradient(
+    var(--primary-color-light-for-gradient),
+    var(--primary-color-light)
+  );
   border-radius: 0.5rem;
   max-width: 24rem;
   overflow: hidden;
@@ -18,11 +21,10 @@
 
 .tip img:hover {
   filter: sepia(#8d6d54, 80%);
-  filter: brightness(0.8);
+  filter: brightness(0.7);
 }
 
 .content {
-  background-color: var(--primary-color-light);
   display: block;
   padding-top: 1rem;
   text-align: center;
@@ -39,6 +41,7 @@
 
 .summary h2 {
   padding: 0 1rem;
+  font-size: 1.3rem;
 }
 
 .label p {

@@ -4,6 +4,7 @@
   --primary-color: #8d6d54;
   --primary-color-light: #e7d3c3;
   --primary-color-light2: #e4c9b5;
+  --primary-color-light-for-gradient: #e6e1dd;
   --primary-color-dark: #5f3a1d;
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
@@ -197,7 +198,31 @@ img {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 8rem auto;
+  margin: 4rem auto;
+}
+.section_content_first {
+  margin-top: 5rem;
+}
+
+.section_content h2,
+.section_content h3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.section_content h3 {
+  font-size: 1.3rem;
+  line-height: 3;
+  margin-top: 0;
+}
+
+.section_content h2 {
+  padding-bottom: 1rem;
+}
+
+.map_homepage_wrapper {
+  margin-top: 2rem;
+  margin-bottom: -1rem;
 }
 
 .link_to_page {
