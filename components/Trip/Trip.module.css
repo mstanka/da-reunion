@@ -62,7 +62,21 @@
   margin-left: 0.5rem;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  fill: currentColor;
+}
+
+.label {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.label span {
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
 }
 
 @media screen and (min-width: 768px) {
