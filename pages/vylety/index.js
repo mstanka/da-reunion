@@ -84,8 +84,12 @@ const TripsPage = ({ trips }) => {
         <div className="filters">
           <div>
             <h3>
-              obtížnosti: <DifficultyIcon className="icon" />
+              obtížnosti:{' '}
+              <span className="filters_icon">
+                <DifficultyIcon className="icon" />{' '}
+              </span>
             </h3>
+
             <Difficulty
               value={filter.difficulty}
               onChange={(value) =>
@@ -95,7 +99,10 @@ const TripsPage = ({ trips }) => {
           </div>
           <div>
             <h3>
-              typu: <TypeIcon className="icon" />
+              typu:{' '}
+              <span className="filters_icon">
+                <TypeIcon className="icon" />
+              </span>
             </h3>
             <Type
               value={filter.type}
