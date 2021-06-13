@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color: #8d6d54;
+  --primary-color: rgb(141, 93, 56);
   --primary-color-light: #e7d3c3;
   --primary-color-light2: #e4c9b5;
   --primary-color-light-for-gradient: #e6e1dd;
@@ -350,15 +350,7 @@ img {
   }
 
   .description {
-    width: 70%;
-  }
-
-  .short_info_tips {
-    width: 85%;
-  }
-
-  .short_info_tips p {
-    font-size: 1.3rem;
+    width: 80%;
   }
 }
 
@@ -377,13 +369,5 @@ img {
 
   .description {
     width: 60%;
-  }
-
-  .short_info_tips {
-    width: 85%;
-  }
-
-  .short_info_tips p {
-    font-size: 1.3rem;
   }
 }

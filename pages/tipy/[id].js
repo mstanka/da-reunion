@@ -18,7 +18,7 @@ const Tip = ({ tip }) => {
         <div className="short_info_tips description ">
           <h1>{tip.title}</h1>
           <p>{tip.description}</p>
-          <Image src={tip.image} width={1920} height={1280} />
+          <Image src={tip.image} width={675} height={451} />
         </div>
       </div>
     </div>
