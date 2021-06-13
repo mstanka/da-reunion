@@ -14,6 +14,10 @@
   color: var(--primary-color-dark);
 }
 
+.title {
+  padding: 1rem 0;
+}
+
 .image {
   display: block;
   height: 40%;

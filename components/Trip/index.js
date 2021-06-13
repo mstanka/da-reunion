@@ -21,7 +21,7 @@ const Trip = ({ title, about, difficulty, type, location, id, distance }) => {
           </div>
           <div className="center">
             <div className={styles.summary}>
-              <h2>{title}</h2>
+              <h2 className={styles.title}>{title}</h2>
               <div className={styles.about}>{about}</div>
               <div className={styles.label}>
                 <DifficultyIcon />
