@@ -5,6 +5,7 @@
   --primary-color-light: #e7d3c3;
   --primary-color-light2: #e4c9b5;
   --primary-color-light-for-gradient: #e6e1dd;
+  --primary-color-middle: rgb(194, 166, 146);
   --primary-color-dark: #5f3a1d;
   --secondary-color: #bd5740;
   --dark-color: #0a0403;
@@ -100,7 +101,10 @@ img {
 }
 
 .filters > div {
-  background: linear-gradient(var(--primary-color-light), var(--primary-color));
+  background: linear-gradient(
+    var(--primary-color-light),
+    var(--primary-color-middle)
+  );
   border: 1px solid var(--primary-color-light);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 12px 2px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -113,6 +117,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.filters_icon {
+  margin-left: 0.5rem;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -120,10 +128,10 @@ img {
   cursor: pointer;
   font: inherit;
   font-weight: 700;
-  background: linear-gradient(var(--primary-color-light), var(--primary-color));
+  background: linear-gradient(var(--primary-color), var(--primary-color-dark));
   border: 1px solid var(--primary-color-light);
   border-radius: 6px;
-  color: var(--primary-color-dark);
+  color: var(--primary-color-middle);
   padding: 1rem 1.5rem;
   margin: 1rem 0;
   align-self: center;
@@ -256,11 +264,11 @@ img {
   padding: 0.7rem 1.6rem;
   border-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-  background-color: var(--primary-color-dark);
+  background: linear-gradient(var(--primary-color), var(--primary-color-dark));
   border-color: var(--primary-color-dark);
   color: var(--primary-color-light);
   font-weight: bold;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .btn_back {
@@ -286,7 +294,10 @@ img {
 .btn_back:hover,
 .btn_back:active,
 .btn_back:focus {
-  background-color: var(--primary-color-light);
+  background: linear-gradient(
+    var(--primary-color-light2),
+    var(--primary-color-light2)
+  );
   color: var(--primary-color-dark);
 }
 
