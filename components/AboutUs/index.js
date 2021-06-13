@@ -47,7 +47,7 @@ const AboutUs = () => {
                 napůl české a napůl reunionské rodině, spřátelila jsem se
                 místními studenty a od všech jsem sondovala tipy na výlety,
                 které Vám ráda předám. Já osobně jsem spíše plážový a koupací
-                typ, tipy na hory dostanete zase od Markét. :){' '}
+                typ, tipy na hory dostanete zase od Markét.{' '}
               </p>
               <p>
                 Ostrov má spoustu specifik, na které je třeba dávat si pozor,

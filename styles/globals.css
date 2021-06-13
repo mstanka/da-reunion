@@ -264,11 +264,12 @@ img {
   padding: 0.7rem 1.6rem;
   border-radius: 6px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(var(--primary-color), var(--primary-color-dark));
-  border-color: var(--primary-color-dark);
+  background-color: var(--primary-color-dark);
+  border: 1px solid var(--primary-color-light);
   color: var(--primary-color-light);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px 6px 2px rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn_back {
@@ -278,10 +279,10 @@ img {
   margin: 0.5rem auto;
   padding: 0.7rem 1.6rem;
   border-radius: 6px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-color-dark);
-  border: 1px solid var(--primary-color-dark);
+  border: 1px solid var(--primary-color-light);
   color: var(--primary-color-light);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), 0 1px 6px 2px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   cursor: pointer;
   text-align: center;
@@ -294,11 +295,9 @@ img {
 .btn_back:hover,
 .btn_back:active,
 .btn_back:focus {
-  background: linear-gradient(
-    var(--primary-color-light2),
-    var(--primary-color-light2)
-  );
-  color: var(--primary-color-dark);
+  background-color: var(--primary-color-dark);
+  border-color: var(--primary-color-dark);
+  color: var(--primary-color-light);
 }
 
 .map_homepage {
@@ -364,6 +363,11 @@ img {
 
   .description {
     width: 80%;
+  }
+
+  .btn_back,
+  .know_more {
+    color: var(--primary-color-middle);
   }
 }
 

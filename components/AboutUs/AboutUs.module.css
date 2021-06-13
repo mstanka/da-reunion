@@ -15,6 +15,12 @@
   padding: 0;
 }
 
+.introtext {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -26,6 +32,7 @@
   align-items: center;
   margin: 4rem auto;
   background-color: var(--primary-color-light);
+  border-radius: 7px;
 }
 
 .about_us > div {
@@ -50,7 +57,7 @@
 }
 
 .text_us {
-  padding: 2rem 0.5rem;
+  padding: 2rem 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
