@@ -1,3 +1,21 @@
+# Reunion našima očima
+
+## Závěrečný projekt Czechitas Digitální akademie Web Praha 2021
+
+Cestovatelský web o francouzském ostrově Reunion založený na vlastních zážitcích a informacích získaných od místních. Obsahuje fotogalerii, nápady na výlety a obecné tipy k životě na ostrově. Výlety je možné vyhledávat na interaktivní mapě nebo filtrovat podle obtížnosti a typu výletu, případně si výlety seřadit podle vzdálenosti od aktuální polohy cestovatele.
+
+Web má sloužit cestovatelům, kteří zvažují nebo plánují cestu na ostrov Reunion. Cestovatelé si mohou cestu naplánovat již doma nebo web využít přímo až na místě. Žádaný výlet si mohou vyhledat na mapě nebo jeho vyfiltrováním podle kritérií. Na své si tedy přijdou jak cestovatelé vyhledávající klidné výlety na pláž, tak aktivní milovníci horských túr. Díky tlačítku, které dokáže spočítat vzdálenost od jejich aktuální polohy,  se mohou rozhodnout i spontánně pro nejbližší výlet ve svém okolí. V Obecných tipech si mohou dohledat info, které jim zpestří nebo “zachrání” výlet (např. kde je povoleno se koupat, co k obědu, kde zjistit předpověď počasí nebo informace o dopravě).
+
+### Kontakt
+
+[Markéta Staňková](mailto:stmmarketa@gmail.com) ||
+[Kateřina Levová](mailto:katerina.levova@gmail.com) ||
+Palo Otčenáš (mentoring) ||
+[Czechitas](https://www.czechitas.cz/)
+
+---
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -11,12 +29,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
